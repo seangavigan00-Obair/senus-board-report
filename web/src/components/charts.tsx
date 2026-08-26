@@ -17,6 +17,7 @@ import { formatValue } from "@/lib/format";
  */
 
 const AXIS = "var(--hairline)";
+const AXIS_W = 0.8;
 
 function niceTicks(min: number, max: number, count = 4): number[] {
   if (min === max) return [min];
@@ -42,16 +43,23 @@ export function BarSeries({
   unit,
   height = 200,
   positiveColor = "var(--accent)",
+  scaleMax,
 }: {
   points: Point[];
   unit: Unit;
   height?: number;
   positiveColor?: string;
+  /**
+   * Force the top of the scale. Two charts placed side by side get compared by
+   * bar height whether or not that is valid, so charts meant to be read
+   * together must share a scale.
+   */
+  scaleMax?: number;
 }) {
   const values = points.filter((p) => p.value !== null).map((p) => p.value as number);
   if (values.length === 0) return null;
 
-  const max = Math.max(...values, 0);
+  const max = Math.max(...values, 0, scaleMax ?? Number.NEGATIVE_INFINITY);
   const min = Math.min(...values, 0);
   const ticks = niceTicks(min, max);
   const top = Math.max(max, ...ticks);
@@ -60,8 +68,11 @@ export function BarSeries({
 
   const padL = 58;
   const padB = 26;
-  const plotH = height - padB - 10;
-  const y = (v: number) => 10 + (1 - (v - bottom) / span) * plotH;
+  // The tallest bar carries a value label ABOVE it, so the plot area has to stop
+  // short of the top of the viewBox or that label is clipped. It was.
+  const padT = 22;
+  const plotH = height - padB - padT;
+  const y = (v: number) => padT + (1 - (v - bottom) / span) * plotH;
   const zeroY = y(0);
 
   return (
@@ -74,7 +85,7 @@ export function BarSeries({
       >
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={0.5} />
+            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={AXIS_W} />
             <text
               x={padL - 8}
               y={y(t) + 3}
@@ -162,11 +173,12 @@ export function LineSeries({
 
   const padL = 58;
   const padB = 26;
-  const plotH = height - padB - 10;
+  const padT = 16;
+  const plotH = height - padB - padT;
   const labels = series[0]?.points.map((p) => p.label) ?? [];
   const slot = labels.length > 1 ? (520 - padL - 20) / (labels.length - 1) : 0;
   const x = (i: number) => padL + 10 + slot * i;
-  const y = (v: number) => 10 + (1 - (v - bottom) / span) * plotH;
+  const y = (v: number) => padT + (1 - (v - bottom) / span) * plotH;
 
   return (
     <div className="w-full overflow-x-auto">
@@ -178,7 +190,7 @@ export function LineSeries({
       >
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={0.5} />
+            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={AXIS_W} />
             <text
               x={padL - 8}
               y={y(t) + 3}
@@ -280,8 +292,9 @@ export function Waterfall({
 
   const padL = 58;
   const padB = 26;
-  const plotH = height - padB - 14;
-  const y = (v: number) => 14 + (1 - (v - bottom) / span) * plotH;
+  const padT = 22;
+  const plotH = height - padB - padT;
+  const y = (v: number) => padT + (1 - (v - bottom) / span) * plotH;
 
   return (
     <div className="w-full overflow-x-auto">
@@ -293,7 +306,7 @@ export function Waterfall({
       >
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={0.5} />
+            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={AXIS_W} />
             <text
               x={padL - 8}
               y={y(t) + 3}

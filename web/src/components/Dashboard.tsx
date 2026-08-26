@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Audience, BoardReport, Metric } from "@/lib/types";
 import { AUDIENCE_LABEL, AUDIENCE_LENS } from "@/lib/types";
 import { display, formatValue, deltaLabel, trend } from "@/lib/format";
@@ -27,9 +27,44 @@ const NAV = [
   { id: "quality", label: "Data quality" },
 ];
 
+/**
+ * Highlights the nav item for whichever section is currently in view.
+ *
+ * Without it the sidebar is a list of links with no sense of place, which on a
+ * page this long makes the reader lose track of where they are in the pack.
+ */
+function useActiveSection(ids: string[]): string {
+  const [active, setActive] = useState(ids[0]);
+  const ratios = useRef<Record<string, number>>({});
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          ratios.current[entry.target.id] = entry.isIntersecting
+            ? entry.intersectionRatio
+            : 0;
+        }
+        const best = Object.entries(ratios.current).sort((a, b) => b[1] - a[1])[0];
+        if (best && best[1] > 0) setActive(best[0]);
+      },
+      { rootMargin: "-88px 0px -55% 0px", threshold: [0, 0.25, 0.5, 1] },
+    );
+    for (const id of ids) {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    }
+    return () => observer.disconnect();
+  }, [ids]);
+
+  return active;
+}
+
 export function Dashboard({ report }: { report: BoardReport }) {
   const [audience, setAudience] = useState<Audience>("board");
   const [inspecting, setInspecting] = useState<Metric | null>(null);
+  const navIds = useMemo(() => NAV.map((n) => n.id), []);
+  const activeSection = useActiveSection(navIds);
 
   const byIdPeriod = useMemo(() => {
     const out: Record<string, Record<string, Metric>> = {};
@@ -77,7 +112,22 @@ export function Dashboard({ report }: { report: BoardReport }) {
     .map((id) => get(id, costPeriod))
     .filter(Boolean) as Metric[];
 
-  const headline = latest(report.audience_headline[audience]);
+  // The alert block already leads with cash runway at full size. Repeating it as
+  // a KPI card 200px later wastes one of only four slots, so fall through to the
+  // next most useful indicator for that audience when they collide.
+  // Both revenue charts sit side by side in the same colour and style, so they
+  // must share a scale - otherwise a 645k half-year bar renders taller than a
+  // 1.0m full-year one and the comparison the layout invites is simply wrong.
+  const revenueScaleMax = Math.max(
+    ...[...annual, ...halves]
+      .map((p) => get("revenue", p)?.value ?? 0)
+      .filter((v) => Number.isFinite(v)),
+  );
+
+  const headlineId = report.audience_headline[audience];
+  const headline = latest(
+    headlineId === "cash_runway" ? "monthly_burn" : headlineId,
+  );
 
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
@@ -87,7 +137,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
           its hero sections. It stays constant in light and dark mode, so the
           product reads as Senus at a glance rather than as a generic dashboard.
         */}
-        <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col bg-[var(--brand-deep)] lg:flex">
+        <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col border-r border-white/10 bg-[var(--brand-deep)] lg:flex">
           <div className="border-b border-white/10 px-5 py-5">
             <p className="font-display text-sm font-semibold tracking-tight text-[var(--brand-deep-text)]">
               {report.entity.current_name}
@@ -97,16 +147,23 @@ export function Dashboard({ report }: { report: BoardReport }) {
             </p>
           </div>
           <nav className="flex-1 overflow-y-auto px-3 py-4">
-            {NAV.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                className="block rounded px-2.5 py-1.5 text-xs text-[var(--brand-deep-muted)] transition
-                           hover:bg-white/10 hover:text-[var(--brand-deep-text)]"
-              >
-                {item.label}
-              </a>
-            ))}
+            {NAV.map((item) => {
+              const isActive = activeSection === item.id;
+              return (
+                <a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  aria-current={isActive ? "true" : undefined}
+                  className={`block rounded border-l-2 px-2.5 py-1.5 text-xs transition ${
+                    isActive
+                      ? "border-[var(--accent)] bg-white/10 font-medium text-[var(--brand-deep-text)]"
+                      : "border-transparent text-[var(--brand-deep-muted)] hover:bg-white/5 hover:text-[var(--brand-deep-text)]"
+                  }`}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </nav>
           <div className="border-t border-white/10 px-5 py-4 text-[10px] leading-relaxed text-[var(--brand-deep-muted)]">
             <p className="font-mono">build {report.build.content_hash}</p>
@@ -206,12 +263,14 @@ export function Dashboard({ report }: { report: BoardReport }) {
                   <BarSeries
                     points={toPoints(annual.map((p) => get("revenue", p)), annual.map((p) => periodLabels[p] ?? p))}
                     unit="eur"
+                    scaleMax={revenueScaleMax}
                   />
                 </Figure>
-                <Figure caption="Revenue by half. Second halves are derived by subtraction (FY less H1); no half-year splits are published separately.">
+                <Figure caption="Revenue by half, on the same scale as the chart to its left so bar heights are directly comparable. Second halves are derived by subtraction (FY less H1); no half-year splits are published separately.">
                   <BarSeries
                     points={toPoints(halves.map((p) => get("revenue", p)), halves.map((p) => periodLabels[p] ?? p))}
                     unit="eur"
+                    scaleMax={revenueScaleMax}
                   />
                 </Figure>
               </div>
