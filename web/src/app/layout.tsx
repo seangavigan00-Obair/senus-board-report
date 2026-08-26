@@ -27,8 +27,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
+    // Pinned to light. A board pack is a printed-document idiom - white paper,
+    // ink, one strong brand colour - and following the reader's OS theme would
+    // hand half of them a dark report they did not ask for.
     <html
       lang="en"
+      data-theme="light"
       className={`${figtree.variable} ${mulish.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

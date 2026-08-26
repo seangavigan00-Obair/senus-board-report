@@ -22,8 +22,9 @@ import { formatValue } from "@/lib/format";
  * without reading a legend.
  */
 
-const AXIS = "var(--hairline)";
-const AXIS_W = 0.8;
+const GRID = "var(--chart-grid)";
+const AXIS = "var(--chart-axis)";
+const GRID_W = 0.8;
 
 function niceTicks(min: number, max: number, count = 4): number[] {
   if (min === max) return [min];
@@ -48,13 +49,15 @@ export function BarSeries({
   points,
   unit,
   height = 200,
-  positiveColor = "var(--accent)",
+  positiveColor = "var(--chart-prior)",
+  emphasisColor = "var(--chart-current)",
   scaleMax,
 }: {
   points: Point[];
   unit: Unit;
   height?: number;
   positiveColor?: string;
+  emphasisColor?: string;
   /**
    * Force the top of the scale. Two charts placed side by side get compared by
    * bar height whether or not that is valid, so charts meant to be read
@@ -90,7 +93,7 @@ export function BarSeries({
       >
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={AXIS_W} />
+            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={GRID} strokeWidth={GRID_W} />
             <text
               x={padL - 8}
               y={y(t) + 3}
@@ -102,10 +105,13 @@ export function BarSeries({
           </g>
         ))}
 
+        {/* A solid baseline. Gridlines recede; the zero line is structure. */}
+        <line x1={padL} x2={520} y1={zeroY} y2={zeroY} stroke={AXIS} strokeWidth={1.2} />
+
         {points.map((p, i) => {
           const slot = (520 - padL) / points.length;
           const cx = padL + slot * i + slot / 2;
-          const w = Math.min(slot * 0.56, 46);
+          const w = Math.min(slot * 0.62, 54);
           if (p.value === null) {
             return (
               <text
@@ -129,14 +135,22 @@ export function BarSeries({
                 width={w}
                 height={barH}
                 rx={2}
-                fill={p.value < 0 ? "var(--negative)" : positiveColor}
-                opacity={p.muted ? 0.45 : p.emphasis ? 1 : 0.85}
+                fill={
+                  p.value < 0
+                    ? "var(--negative)"
+                    : p.emphasis
+                      ? emphasisColor
+                      : positiveColor
+                }
+                opacity={p.muted && !p.emphasis ? 0.5 : 1}
               />
               <text
                 x={cx}
-                y={p.value < 0 ? barTop + barH + 11 : barTop - 5}
+                y={p.value < 0 ? barTop + barH + 12 : barTop - 6}
                 textAnchor="middle"
-                className="fill-[var(--text)] text-[9px] font-medium tabular-nums"
+                className={`fill-[var(--text)] tabular-nums ${
+                  p.emphasis ? "text-[11px] font-semibold" : "text-[9px] font-medium"
+                }`}
               >
                 {formatValue(p.value, unit)}
               </text>
@@ -144,7 +158,11 @@ export function BarSeries({
                 x={cx}
                 y={height - 8}
                 textAnchor="middle"
-                className="fill-[var(--muted)] text-[9px]"
+                className={`text-[9px] ${
+                  p.emphasis
+                    ? "fill-[var(--text)] font-semibold"
+                    : "fill-[var(--muted)]"
+                }`}
               >
                 {p.label}
               </text>
@@ -194,7 +212,7 @@ export function LineSeries({
       >
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={AXIS_W} />
+            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={GRID} strokeWidth={GRID_W} />
             <text
               x={padL - 8}
               y={y(t) + 3}
@@ -205,6 +223,10 @@ export function LineSeries({
             </text>
           </g>
         ))}
+
+        {bottom < 0 && top > 0 && (
+          <line x1={padL} x2={520} y1={y(0)} y2={y(0)} stroke={AXIS} strokeWidth={1.2} />
+        )}
 
         {series.map((s) => {
           const pts = s.points
@@ -217,7 +239,7 @@ export function LineSeries({
                 points={pts.map((p) => `${x(p.i)},${y(p.value as number)}`).join(" ")}
                 fill="none"
                 stroke={s.color}
-                strokeWidth={2}
+                strokeWidth={2.6}
                 strokeLinejoin="round"
                 strokeLinecap="round"
               />
@@ -226,7 +248,7 @@ export function LineSeries({
                   key={p.label}
                   cx={x(p.i)}
                   cy={y(p.value as number)}
-                  r={3}
+                  r={3.4}
                   fill="var(--surface)"
                   stroke={s.color}
                   strokeWidth={2}
@@ -309,7 +331,7 @@ export function Waterfall({
       >
         {ticks.map((t) => (
           <g key={t}>
-            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={AXIS} strokeWidth={AXIS_W} />
+            <line x1={padL} x2={520} y1={y(t)} y2={y(t)} stroke={GRID} strokeWidth={GRID_W} />
             <text
               x={padL - 8}
               y={y(t) + 3}
@@ -328,7 +350,7 @@ export function Waterfall({
           const yTop = Math.min(y(b.from), y(b.to));
           const h = Math.max(Math.abs(y(b.to) - y(b.from)), 1.5);
           const fill = b.isTotal
-            ? "var(--accent)"
+            ? "var(--chart-current)"
             : b.value >= 0
               ? "var(--positive)"
               : "var(--negative)";
@@ -346,6 +368,16 @@ export function Waterfall({
                 />
               )}
               <rect x={cx - w / 2} y={yTop} width={w} height={h} rx={2} fill={fill} />
+              {b.isTotal && (
+                <line
+                  x1={cx - w / 2}
+                  x2={cx + w / 2}
+                  y1={y(0)}
+                  y2={y(0)}
+                  stroke={AXIS}
+                  strokeWidth={1.2}
+                />
+              )}
               <text
                 x={cx}
                 y={yTop - 4}
@@ -377,7 +409,7 @@ export function Composition({
   parts: { label: string; value: number; note?: string | null }[];
 }) {
   const total = parts.reduce((sum, p) => sum + Math.abs(p.value), 0) || 1;
-  const colors = ["var(--accent)", "var(--warning)", "var(--muted)"];
+  const colors = ["var(--chart-current)", "var(--chart-prior)", "#8fc4ba"];
 
   return (
     <div>
@@ -420,10 +452,20 @@ export function Composition({
 export function toPoints(
   metrics: (Metric | undefined)[],
   labels: string[],
+  emphasisIndex?: number,
 ): Point[] {
+  // The last point with a value is the period being reported, unless one is
+  // named explicitly. Emphasising it is what gives the chart a subject.
+  const lastWithValue = metrics.reduce(
+    (acc, m, i) => (m && m.value !== null && !m.not_meaningful ? i : acc),
+    -1,
+  );
+  const emphasisAt = emphasisIndex ?? lastWithValue;
+
   return metrics.map((m, i) => ({
     label: labels[i],
     value: m && !m.not_meaningful ? m.value : null,
     muted: m?.is_approximate || m?.flags.includes("derived_from_cash_movement"),
+    emphasis: i === emphasisAt,
   }));
 }

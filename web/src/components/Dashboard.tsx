@@ -181,7 +181,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
             <div className="px-6 py-3">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
-                  <h1 className="font-display text-lg font-semibold tracking-tight">Board Report</h1>
+                  <h1 className="font-display text-lg font-semibold tracking-tight text-[var(--brand-deep)]">Board Report</h1>
                   <p className="mt-0.5 text-xs text-[var(--muted)]">
                     Year ended 30 June 2026 · unaudited · formerly {report.entity.former_name}
                   </p>
@@ -333,7 +333,8 @@ export function Dashboard({ report }: { report: BoardReport }) {
                 <Figure caption="Cash runway in months, at each period's own burn rate. The December raise bought roughly six months.">
                   <BarSeries
                     unit="months"
-                    positiveColor="var(--warning)"
+                    positiveColor="var(--chart-prior)"
+                    emphasisColor="var(--negative)"
                     points={toPoints(
                       ["FY2024", "FY2025", "HY2026", "H2FY2026"].map((p) => get("cash_runway", p)),
                       ["FY2024", "FY2025", "HY2026", "H2FY2026"].map((p) => periodLabels[p] ?? p),
@@ -439,8 +440,8 @@ function Panel({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="mb-6 scroll-mt-24 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
-      <h2 className="font-display text-sm font-semibold tracking-tight">{title}</h2>
+    <section id={id} className="mb-6 scroll-mt-24 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
+      <h2 className="font-display text-sm font-semibold tracking-tight text-[var(--brand-deep)]">{title}</h2>
       {subtitle && (
         <p className="mt-1 max-w-3xl text-xs leading-relaxed text-[var(--muted)]">{subtitle}</p>
       )}
@@ -494,7 +495,7 @@ function Kpi({
                   focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] ${
                     critical
                       ? "border-[var(--negative)] bg-[var(--negative-wash)]"
-                      : "border-[var(--hairline)] bg-[var(--surface)]"
+                      : "border-[var(--hairline)] bg-[var(--surface)] shadow-[0_1px_2px_rgba(16,33,29,0.05)]"
                   }`}
     >
       <p className="text-[11px] font-medium leading-tight text-[var(--muted)]">{metric.label}</p>
@@ -533,8 +534,8 @@ function Kpi({
 function DataQuality({ report }: { report: BoardReport }) {
   return (
     <section id="quality" className="scroll-mt-28 grid gap-5 lg:grid-cols-2">
-      <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
-        <h2 className="font-display text-sm font-semibold">Source document defects</h2>
+      <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
+        <h2 className="font-display text-sm font-semibold text-[var(--brand-deep)]">Source document defects</h2>
         <p className="mt-1 text-[11px] text-[var(--muted)]">
           Found by automated reconciliation across the published corpus. Figures are
           reported exactly as printed and never silently corrected.
@@ -559,8 +560,8 @@ function DataQuality({ report }: { report: BoardReport }) {
         </ul>
       </div>
 
-      <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
-        <h2 className="font-display text-sm font-semibold">What this report cannot tell you</h2>
+      <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
+        <h2 className="font-display text-sm font-semibold text-[var(--brand-deep)]">What this report cannot tell you</h2>
         <p className="mt-1 text-[11px] text-[var(--muted)]">
           Documented limits of the source corpus.
         </p>
