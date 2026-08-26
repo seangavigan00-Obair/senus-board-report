@@ -131,7 +131,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
 
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
-      <div className="mx-auto flex max-w-[1400px]">
+      <div className="flex w-full">
         {/*
           Sidebar in the brand's deep forest green, the way senus.com uses it for
           its hero sections. It stays constant in light and dark mode, so the
@@ -178,7 +178,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
 
         <div className="min-w-0 flex-1">
           <header className="sticky top-0 z-20 border-b border-[var(--hairline)] bg-[var(--surface)]/95 backdrop-blur">
-            <div className="px-6 py-4">
+            <div className="px-6 py-3">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
                   <h1 className="font-display text-lg font-semibold tracking-tight">Board Report</h1>
@@ -204,16 +204,16 @@ export function Dashboard({ report }: { report: BoardReport }) {
                   ))}
                 </div>
               </div>
-              <p className="mt-2 text-[11px] text-[var(--muted)]">{AUDIENCE_LENS[audience]}</p>
+              <p className="mt-1.5 text-[11px] leading-snug text-[var(--muted)]">{AUDIENCE_LENS[audience]}</p>
             </div>
           </header>
 
-          <main className="px-6 py-6">
+          <main className="px-6 py-5">
             {/* The alert comes before anything else. It is the reason for the pack. */}
             {runway && (
               <section
                 id="overview"
-                className="mb-6 rounded-xl border border-[var(--negative)] bg-[var(--negative-wash)] p-5"
+                className="mb-5 rounded-xl border border-[var(--negative)] bg-[var(--negative-wash)] p-5"
               >
                 <div className="flex flex-wrap items-start gap-6">
                   <div>
@@ -242,7 +242,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
             )}
 
             {/* KPI strip. Four numbers, at a glance. */}
-            <section className="mb-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            <section className="mb-6 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
               <Kpi metric={revenueFY} prior={get("revenue", "FY2025")} caption="FY2026" onInspect={setInspecting} />
               <Kpi metric={growthFY} prior={get("revenue_growth_yoy", "FY2025")} caption="FY2026 vs FY2025" onInspect={setInspecting} />
               <Kpi metric={grossMargin} prior={get("gross_margin", "FY2025")} caption="latest reported" onInspect={setInspecting} />
@@ -258,7 +258,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
                   : undefined
               }
             >
-              <div className="grid gap-8 lg:grid-cols-2">
+              <div className="grid gap-8 xl:grid-cols-2 2xl:gap-12">
                 <Figure caption="Revenue by financial year. FY2026 is a directors' indication, not audited.">
                   <BarSeries
                     points={toPoints(annual.map((p) => get("revenue", p)), annual.map((p) => periodLabels[p] ?? p))}
@@ -281,7 +281,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
               title="Profitability"
               subtitle="Gross margin has widened every year while the operating loss has narrowed. The cost base is overwhelmingly administrative, not cost of delivery."
             >
-              <div className="grid gap-8 lg:grid-cols-2">
+              <div className="grid gap-8 xl:grid-cols-2 2xl:gap-12">
                 <Figure caption="Gross and operating margin. Operating margin remains deeply negative; the trend is the message.">
                   <LineSeries
                     unit="pct"
@@ -316,7 +316,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
               title="Cash & Liquidity"
               subtitle="The December equity raise, not trading, funded the first half of FY2026."
             >
-              <div className="grid gap-8 lg:grid-cols-2">
+              <div className="grid gap-8 xl:grid-cols-2 2xl:gap-12">
                 <Figure caption={`Cash walk, ${periodLabels[bridgePeriod] ?? bridgePeriod}. Operating and investing consumed cash; financing more than replaced it.`}>
                   {bridge.length === 5 ? (
                     <Waterfall
@@ -439,7 +439,7 @@ function Panel({
   children: React.ReactNode;
 }) {
   return (
-    <section id={id} className="mb-8 scroll-mt-28 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
+    <section id={id} className="mb-6 scroll-mt-24 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
       <h2 className="font-display text-sm font-semibold tracking-tight">{title}</h2>
       {subtitle && (
         <p className="mt-1 max-w-3xl text-xs leading-relaxed text-[var(--muted)]">{subtitle}</p>

@@ -6,6 +6,12 @@ import { formatValue } from "@/lib/format";
 /**
  * Charts for the board pack. Inline SVG, no charting dependency.
  *
+ * Sizing: the SVG carries a viewBox and `h-auto w-full`, with no fixed pixel
+ * height. A fixed height plus a viewBox makes the drawing scale to the SHORTER
+ * axis and centre itself, so on a wide column the chart letterboxes with dead
+ * space either side instead of filling the space it was given. Letting height
+ * follow width keeps the aspect ratio and scales the labels with it.
+ *
  * The report has four chart shapes and a handful of series. A charting library
  * would add ~100kb and a client-render pass to draw polylines and rectangles
  * that are a few dozen lines of SVG each. Keeping them hand-written also keeps
@@ -79,8 +85,7 @@ export function BarSeries({
     <div className="w-full overflow-x-auto">
       <svg
         viewBox={`0 0 520 ${height}`}
-        className="w-full min-w-[420px]"
-        style={{ height }}
+        className="h-auto w-full min-w-[380px]"
         role="img"
       >
         {ticks.map((t) => (
@@ -184,8 +189,7 @@ export function LineSeries({
     <div className="w-full overflow-x-auto">
       <svg
         viewBox={`0 0 520 ${height}`}
-        className="w-full min-w-[420px]"
-        style={{ height }}
+        className="h-auto w-full min-w-[380px]"
         role="img"
       >
         {ticks.map((t) => (
@@ -300,8 +304,7 @@ export function Waterfall({
     <div className="w-full overflow-x-auto">
       <svg
         viewBox={`0 0 520 ${height}`}
-        className="w-full min-w-[440px]"
-        style={{ height }}
+        className="h-auto w-full min-w-[400px]"
         role="img"
       >
         {ticks.map((t) => (
