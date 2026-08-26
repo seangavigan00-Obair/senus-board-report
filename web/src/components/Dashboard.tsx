@@ -137,16 +137,16 @@ export function Dashboard({ report }: { report: BoardReport }) {
           its hero sections. It stays constant in light and dark mode, so the
           product reads as Senus at a glance rather than as a generic dashboard.
         */}
-        <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col border-r border-white/10 bg-[var(--brand-deep)] lg:flex">
-          <div className="border-b border-white/10 px-5 py-5">
-            <p className="font-display text-sm font-semibold tracking-tight text-[var(--brand-deep-text)]">
+        <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col border-r border-white/10 bg-[var(--brand-deep)] lg:flex">
+          <div className="border-b border-white/10 px-6 py-6">
+            <p className="font-display text-lg font-semibold tracking-tight text-[var(--brand-deep-text)]">
               {report.entity.current_name}
             </p>
-            <p className="mt-0.5 text-[11px] text-[var(--brand-deep-muted)]">
+            <p className="mt-1 text-sm text-[var(--brand-deep-muted)]">
               {report.entity.ticker} · Euronext Access
             </p>
           </div>
-          <nav className="flex-1 overflow-y-auto px-3 py-4">
+          <nav className="flex-1 overflow-y-auto px-4 py-5">
             {NAV.map((item) => {
               const isActive = activeSection === item.id;
               return (
@@ -154,9 +154,9 @@ export function Dashboard({ report }: { report: BoardReport }) {
                   key={item.id}
                   href={`#${item.id}`}
                   aria-current={isActive ? "true" : undefined}
-                  className={`block rounded border-l-2 px-2.5 py-1.5 text-xs transition ${
+                  className={`block rounded border-l-[3px] px-3.5 py-2.5 text-sm transition ${
                     isActive
-                      ? "border-[var(--accent)] bg-white/10 font-medium text-[var(--brand-deep-text)]"
+                      ? "border-[var(--accent)] bg-white/10 font-semibold text-[var(--brand-deep-text)]"
                       : "border-transparent text-[var(--brand-deep-muted)] hover:bg-white/5 hover:text-[var(--brand-deep-text)]"
                   }`}
                 >
@@ -165,9 +165,9 @@ export function Dashboard({ report }: { report: BoardReport }) {
               );
             })}
           </nav>
-          <div className="border-t border-white/10 px-5 py-4 text-[10px] leading-relaxed text-[var(--brand-deep-muted)]">
+          <div className="border-t border-white/10 px-6 py-5 text-xs leading-relaxed text-[var(--brand-deep-muted)]">
             <p className="font-mono">build {report.build.content_hash}</p>
-            <p className="mt-1">
+            <p className="mt-1.5">
               {report.build.metric_count} metrics · {report.build.period_count} periods
             </p>
             <p className="mt-1">
@@ -181,7 +181,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
             <div className="px-6 py-3">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
-                  <h1 className="font-display text-lg font-semibold tracking-tight text-[var(--brand-deep)]">Board Report</h1>
+                  <h1 className="font-display text-2xl font-semibold tracking-tight text-[var(--brand-deep)]">Board Report</h1>
                   <p className="mt-0.5 text-[13px] text-[var(--muted)]">
                     Year ended 30 June 2026 · unaudited · formerly {report.entity.former_name}
                   </p>
@@ -193,7 +193,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
                       type="button"
                       onClick={() => setAudience(a)}
                       aria-pressed={audience === a}
-                      className={`rounded-full px-3 py-1.5 text-xs font-medium transition ${
+                      className={`rounded-full px-4 py-2 text-sm font-medium transition ${
                         audience === a
                           ? "bg-[var(--accent-strong)] text-[var(--accent-text)]"
                           : "bg-[var(--chip)] text-[var(--muted)] hover:text-[var(--text)]"
@@ -217,17 +217,17 @@ export function Dashboard({ report }: { report: BoardReport }) {
               >
                 <div className="flex flex-wrap items-start gap-6">
                   <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--negative)]">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-[var(--negative)]">
                       Liquidity — action required
                     </p>
-                    <p className="font-display mt-1 text-4xl font-semibold tabular-nums tracking-tight text-[var(--negative)]">
+                    <p className="font-display mt-1 text-5xl font-bold tabular-nums tracking-tight text-[var(--negative)]">
                       {display(runway)}
                     </p>
-                    <p className="text-[13px] text-[var(--muted)]">
+                    <p className="text-sm text-[var(--muted)]">
                       cash runway at 30 June 2026
                     </p>
                   </div>
-                  <p className="max-w-2xl flex-1 text-sm leading-relaxed">
+                  <p className="max-w-2xl flex-1 text-base leading-relaxed">
                     Cash fell from <strong className="tabular-nums">€735,189</strong> at
                     31 December 2025 to approximately{" "}
                     <strong className="tabular-nums">€130,000</strong> at the year end — a
@@ -441,7 +441,7 @@ function Panel({
 }) {
   return (
     <section id={id} className="mb-6 scroll-mt-24 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
-      <h2 className="font-display text-sm font-semibold tracking-tight text-[var(--brand-deep)]">{title}</h2>
+      <h2 className="font-display text-base font-semibold tracking-tight text-[var(--brand-deep)]">{title}</h2>
       {subtitle && (
         <p className="mt-1.5 max-w-3xl text-[13px] leading-relaxed text-[var(--muted)]">{subtitle}</p>
       )}
@@ -498,15 +498,15 @@ function Kpi({
                       : "border-[var(--hairline)] bg-[var(--surface)] shadow-[0_1px_2px_rgba(16,33,29,0.05)]"
                   }`}
     >
-      <p className="text-xs font-medium leading-tight text-[var(--muted)]">{metric.label}</p>
+      <p className="text-sm font-medium leading-tight text-[var(--muted)]">{metric.label}</p>
       <p
-        className={`font-display mt-1.5 font-semibold tabular-nums tracking-tight ${
-          compact ? "text-xl" : "text-2xl"
+        className={`font-display mt-1.5 font-bold tabular-nums tracking-tight ${
+          compact ? "text-2xl" : "text-3xl"
         } ${critical ? "text-[var(--negative)]" : ""}`}
       >
         {display(metric)}
       </p>
-      <p className="mt-1 flex flex-wrap items-center gap-2 text-[11px] text-[var(--muted)]">
+      <p className="mt-1.5 flex flex-wrap items-center gap-2 text-xs text-[var(--muted)]">
         <span>{caption}</span>
         {delta && (
           <span
@@ -535,7 +535,7 @@ function DataQuality({ report }: { report: BoardReport }) {
   return (
     <section id="quality" className="scroll-mt-28 grid gap-5 lg:grid-cols-2">
       <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
-        <h2 className="font-display text-sm font-semibold text-[var(--brand-deep)]">Source document defects</h2>
+        <h2 className="font-display text-base font-semibold text-[var(--brand-deep)]">Source document defects</h2>
         <p className="mt-1 text-xs text-[var(--muted)]">
           Found by automated reconciliation across the published corpus. Figures are
           reported exactly as printed and never silently corrected.
@@ -561,7 +561,7 @@ function DataQuality({ report }: { report: BoardReport }) {
       </div>
 
       <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
-        <h2 className="font-display text-sm font-semibold text-[var(--brand-deep)]">What this report cannot tell you</h2>
+        <h2 className="font-display text-base font-semibold text-[var(--brand-deep)]">What this report cannot tell you</h2>
         <p className="mt-1 text-xs text-[var(--muted)]">
           Documented limits of the source corpus.
         </p>
