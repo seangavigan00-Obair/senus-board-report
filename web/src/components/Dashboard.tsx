@@ -182,7 +182,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
                   <h1 className="font-display text-lg font-semibold tracking-tight text-[var(--brand-deep)]">Board Report</h1>
-                  <p className="mt-0.5 text-xs text-[var(--muted)]">
+                  <p className="mt-0.5 text-[13px] text-[var(--muted)]">
                     Year ended 30 June 2026 · unaudited · formerly {report.entity.former_name}
                   </p>
                 </div>
@@ -204,7 +204,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
                   ))}
                 </div>
               </div>
-              <p className="mt-1.5 text-[11px] leading-snug text-[var(--muted)]">{AUDIENCE_LENS[audience]}</p>
+              <p className="mt-1.5 text-xs leading-snug text-[var(--muted)]">{AUDIENCE_LENS[audience]}</p>
             </div>
           </header>
 
@@ -223,7 +223,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
                     <p className="font-display mt-1 text-4xl font-semibold tabular-nums tracking-tight text-[var(--negative)]">
                       {display(runway)}
                     </p>
-                    <p className="text-xs text-[var(--muted)]">
+                    <p className="text-[13px] text-[var(--muted)]">
                       cash runway at 30 June 2026
                     </p>
                   </div>
@@ -443,7 +443,7 @@ function Panel({
     <section id={id} className="mb-6 scroll-mt-24 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
       <h2 className="font-display text-sm font-semibold tracking-tight text-[var(--brand-deep)]">{title}</h2>
       {subtitle && (
-        <p className="mt-1 max-w-3xl text-xs leading-relaxed text-[var(--muted)]">{subtitle}</p>
+        <p className="mt-1.5 max-w-3xl text-[13px] leading-relaxed text-[var(--muted)]">{subtitle}</p>
       )}
       <div className="mt-5">{children}</div>
     </section>
@@ -454,7 +454,7 @@ function Figure({ caption, children }: { caption: string; children: React.ReactN
   return (
     <figure className="min-w-0">
       {children}
-      <figcaption className="mt-2 text-[11px] leading-snug text-[var(--muted)]">
+      <figcaption className="mt-2.5 text-xs leading-relaxed text-[var(--muted)]">
         {caption}
       </figcaption>
     </figure>
@@ -498,7 +498,7 @@ function Kpi({
                       : "border-[var(--hairline)] bg-[var(--surface)] shadow-[0_1px_2px_rgba(16,33,29,0.05)]"
                   }`}
     >
-      <p className="text-[11px] font-medium leading-tight text-[var(--muted)]">{metric.label}</p>
+      <p className="text-xs font-medium leading-tight text-[var(--muted)]">{metric.label}</p>
       <p
         className={`font-display mt-1.5 font-semibold tabular-nums tracking-tight ${
           compact ? "text-xl" : "text-2xl"
@@ -506,7 +506,7 @@ function Kpi({
       >
         {display(metric)}
       </p>
-      <p className="mt-0.5 flex items-center gap-2 text-[10px] text-[var(--muted)]">
+      <p className="mt-1 flex flex-wrap items-center gap-2 text-[11px] text-[var(--muted)]">
         <span>{caption}</span>
         {delta && (
           <span
@@ -536,7 +536,7 @@ function DataQuality({ report }: { report: BoardReport }) {
     <section id="quality" className="scroll-mt-28 grid gap-5 lg:grid-cols-2">
       <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
         <h2 className="font-display text-sm font-semibold text-[var(--brand-deep)]">Source document defects</h2>
-        <p className="mt-1 text-[11px] text-[var(--muted)]">
+        <p className="mt-1 text-xs text-[var(--muted)]">
           Found by automated reconciliation across the published corpus. Figures are
           reported exactly as printed and never silently corrected.
         </p>
@@ -562,12 +562,12 @@ function DataQuality({ report }: { report: BoardReport }) {
 
       <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5 shadow-[0_1px_2px_rgba(16,33,29,0.05)]">
         <h2 className="font-display text-sm font-semibold text-[var(--brand-deep)]">What this report cannot tell you</h2>
-        <p className="mt-1 text-[11px] text-[var(--muted)]">
+        <p className="mt-1 text-xs text-[var(--muted)]">
           Documented limits of the source corpus.
         </p>
         <ul className="mt-3 space-y-2">
           {report.data_gaps.map((gap, i) => (
-            <li key={i} className="flex gap-2 text-xs leading-snug text-[var(--muted)]">
+            <li key={i} className="flex gap-2 text-[13px] leading-relaxed text-[var(--muted)]">
               <span className="text-[var(--warning)]">•</span>
               <span>{gap}</span>
             </li>

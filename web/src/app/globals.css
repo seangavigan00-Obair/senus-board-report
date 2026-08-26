@@ -30,10 +30,19 @@
 :root {
   --bg: #ffffff;
   --surface: #ffffff;
-  --text: #16211d;
-  --muted: #5a6b64;
-  --hairline: #dde6e2;
-  --chip: #f1f6f4;
+
+  /*
+   * Type tones, measured against white. The earlier muted grey sat at 5.64:1,
+   * which passes AA on paper and still read as washed out at 10-11px in a
+   * humanist sans with thin strokes. Small text needs more headroom than the
+   * minimum, not exactly the minimum, so muted is now 8.77:1 and body 17.80:1 -
+   * a clear hierarchy where both halves are comfortably readable.
+   */
+  --text: #0f1a16;      /* 17.80:1 */
+  --muted: #3f4e48;     /*  8.77:1 */
+
+  --hairline: #d3dfda;
+  --chip: #eef4f1;
 
   /*
    * Chart palette: the company's two brand colours doing the work of a
@@ -44,10 +53,12 @@
    * Both clear 3:1 against white, the WCAG threshold for graphical objects:
    * teal 3.70:1, forest 8.18:1.
    */
+  --chart-label: #44554f;   /* 7.90:1 - axis and value text */
+  --chart-axis: #7e938c;    /* 3.26:1 - the zero baseline, a real line */
+  --chart-grid: #dae5e0;    /* decorative rules, present but receding */
+
   --chart-prior: #20948b;
   --chart-current: #0a5a48;
-  --chart-grid: #eef3f1;
-  --chart-axis: #c8d5d0;
 
   --brand-deep: #023c28;
   --brand-deep-text: #dfece6;

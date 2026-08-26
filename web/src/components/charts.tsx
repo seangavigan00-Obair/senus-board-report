@@ -98,7 +98,7 @@ export function BarSeries({
               x={padL - 8}
               y={y(t) + 3}
               textAnchor="end"
-              className="fill-[var(--muted)] text-[9px] tabular-nums"
+              className="fill-[var(--chart-label)] text-[10px] tabular-nums"
             >
               {formatValue(t, unit)}
             </text>
@@ -119,7 +119,7 @@ export function BarSeries({
                 x={cx}
                 y={zeroY - 6}
                 textAnchor="middle"
-                className="fill-[var(--muted)] text-[9px]"
+                className="fill-[var(--chart-label)] text-[10px]"
               >
                 —
               </text>
@@ -149,7 +149,7 @@ export function BarSeries({
                 y={p.value < 0 ? barTop + barH + 12 : barTop - 6}
                 textAnchor="middle"
                 className={`fill-[var(--text)] tabular-nums ${
-                  p.emphasis ? "text-[11px] font-semibold" : "text-[9px] font-medium"
+                  p.emphasis ? "text-[12px] font-bold" : "text-[10px] font-semibold"
                 }`}
               >
                 {formatValue(p.value, unit)}
@@ -158,10 +158,10 @@ export function BarSeries({
                 x={cx}
                 y={height - 8}
                 textAnchor="middle"
-                className={`text-[9px] ${
+                className={`text-[10px] ${
                   p.emphasis
                     ? "fill-[var(--text)] font-semibold"
-                    : "fill-[var(--muted)]"
+                    : "fill-[var(--chart-label)]"
                 }`}
               >
                 {p.label}
@@ -217,7 +217,7 @@ export function LineSeries({
               x={padL - 8}
               y={y(t) + 3}
               textAnchor="end"
-              className="fill-[var(--muted)] text-[9px] tabular-nums"
+              className="fill-[var(--chart-label)] text-[10px] tabular-nums"
             >
               {formatValue(t, unit)}
             </text>
@@ -265,7 +265,7 @@ export function LineSeries({
             x={x(i)}
             y={height - 8}
             textAnchor="middle"
-            className="fill-[var(--muted)] text-[9px]"
+            className="fill-[var(--chart-label)] text-[10px]"
           >
             {label}
           </text>
@@ -274,7 +274,7 @@ export function LineSeries({
 
       <div className="mt-1 flex flex-wrap gap-4">
         {series.map((s) => (
-          <span key={s.name} className="flex items-center gap-1.5 text-[11px] text-[var(--muted)]">
+          <span key={s.name} className="flex items-center gap-1.5 text-[12px] text-[var(--muted)]">
             <span className="h-0.5 w-4 rounded" style={{ background: s.color }} />
             {s.name}
           </span>
@@ -336,7 +336,7 @@ export function Waterfall({
               x={padL - 8}
               y={y(t) + 3}
               textAnchor="end"
-              className="fill-[var(--muted)] text-[9px] tabular-nums"
+              className="fill-[var(--chart-label)] text-[10px] tabular-nums"
             >
               {formatValue(t, "eur")}
             </text>
@@ -382,7 +382,7 @@ export function Waterfall({
                 x={cx}
                 y={yTop - 4}
                 textAnchor="middle"
-                className="fill-[var(--text)] text-[9px] font-medium tabular-nums"
+                className="fill-[var(--text)] text-[10px] font-semibold tabular-nums"
               >
                 {formatValue(b.isTotal ? b.value : b.value, "eur")}
               </text>
@@ -390,7 +390,7 @@ export function Waterfall({
                 x={cx}
                 y={height - 8}
                 textAnchor="middle"
-                className="fill-[var(--muted)] text-[9px]"
+                className="fill-[var(--chart-label)] text-[10px]"
               >
                 {b.label}
               </text>
