@@ -82,11 +82,17 @@ export function Dashboard({ report }: { report: BoardReport }) {
   return (
     <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
       <div className="mx-auto flex max-w-[1400px]">
-        {/* Sidebar. A pack has sections; a CEO navigates to the one they need. */}
-        <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col border-r border-[var(--hairline)] bg-[var(--surface)] lg:flex">
-          <div className="border-b border-[var(--hairline)] px-5 py-5">
-            <p className="text-sm font-semibold tracking-tight">{report.entity.current_name}</p>
-            <p className="mt-0.5 text-[11px] text-[var(--muted)]">
+        {/*
+          Sidebar in the brand's deep forest green, the way senus.com uses it for
+          its hero sections. It stays constant in light and dark mode, so the
+          product reads as Senus at a glance rather than as a generic dashboard.
+        */}
+        <aside className="sticky top-0 hidden h-screen w-56 shrink-0 flex-col bg-[var(--brand-deep)] lg:flex">
+          <div className="border-b border-white/10 px-5 py-5">
+            <p className="font-display text-sm font-semibold tracking-tight text-[var(--brand-deep-text)]">
+              {report.entity.current_name}
+            </p>
+            <p className="mt-0.5 text-[11px] text-[var(--brand-deep-muted)]">
               {report.entity.ticker} · Euronext Access
             </p>
           </div>
@@ -95,13 +101,14 @@ export function Dashboard({ report }: { report: BoardReport }) {
               <a
                 key={item.id}
                 href={`#${item.id}`}
-                className="block rounded px-2.5 py-1.5 text-xs text-[var(--muted)] transition hover:bg-[var(--chip)] hover:text-[var(--text)]"
+                className="block rounded px-2.5 py-1.5 text-xs text-[var(--brand-deep-muted)] transition
+                           hover:bg-white/10 hover:text-[var(--brand-deep-text)]"
               >
                 {item.label}
               </a>
             ))}
           </nav>
-          <div className="border-t border-[var(--hairline)] px-5 py-4 text-[10px] leading-relaxed text-[var(--muted)]">
+          <div className="border-t border-white/10 px-5 py-4 text-[10px] leading-relaxed text-[var(--brand-deep-muted)]">
             <p className="font-mono">build {report.build.content_hash}</p>
             <p className="mt-1">
               {report.build.metric_count} metrics · {report.build.period_count} periods
@@ -117,7 +124,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
             <div className="px-6 py-4">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
-                  <h1 className="text-lg font-semibold tracking-tight">Board Report</h1>
+                  <h1 className="font-display text-lg font-semibold tracking-tight">Board Report</h1>
                   <p className="mt-0.5 text-xs text-[var(--muted)]">
                     Year ended 30 June 2026 · unaudited · formerly {report.entity.former_name}
                   </p>
@@ -131,7 +138,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
                       aria-pressed={audience === a}
                       className={`rounded-full px-3 py-1.5 text-xs font-medium transition ${
                         audience === a
-                          ? "bg-[var(--accent)] text-[var(--accent-text)]"
+                          ? "bg-[var(--accent-strong)] text-[var(--accent-text)]"
                           : "bg-[var(--chip)] text-[var(--muted)] hover:text-[var(--text)]"
                       }`}
                     >
@@ -156,7 +163,7 @@ export function Dashboard({ report }: { report: BoardReport }) {
                     <p className="text-[11px] font-semibold uppercase tracking-wide text-[var(--negative)]">
                       Liquidity — action required
                     </p>
-                    <p className="mt-1 text-4xl font-semibold tabular-nums tracking-tight text-[var(--negative)]">
+                    <p className="font-display mt-1 text-4xl font-semibold tabular-nums tracking-tight text-[var(--negative)]">
                       {display(runway)}
                     </p>
                     <p className="text-xs text-[var(--muted)]">
@@ -374,7 +381,7 @@ function Panel({
 }) {
   return (
     <section id={id} className="mb-8 scroll-mt-28 rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
-      <h2 className="text-sm font-semibold tracking-tight">{title}</h2>
+      <h2 className="font-display text-sm font-semibold tracking-tight">{title}</h2>
       {subtitle && (
         <p className="mt-1 max-w-3xl text-xs leading-relaxed text-[var(--muted)]">{subtitle}</p>
       )}
@@ -433,7 +440,7 @@ function Kpi({
     >
       <p className="text-[11px] font-medium leading-tight text-[var(--muted)]">{metric.label}</p>
       <p
-        className={`mt-1.5 font-semibold tabular-nums tracking-tight ${
+        className={`font-display mt-1.5 font-semibold tabular-nums tracking-tight ${
           compact ? "text-xl" : "text-2xl"
         } ${critical ? "text-[var(--negative)]" : ""}`}
       >
@@ -468,7 +475,7 @@ function DataQuality({ report }: { report: BoardReport }) {
   return (
     <section id="quality" className="scroll-mt-28 grid gap-5 lg:grid-cols-2">
       <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
-        <h2 className="text-sm font-semibold">Source document defects</h2>
+        <h2 className="font-display text-sm font-semibold">Source document defects</h2>
         <p className="mt-1 text-[11px] text-[var(--muted)]">
           Found by automated reconciliation across the published corpus. Figures are
           reported exactly as printed and never silently corrected.
@@ -494,7 +501,7 @@ function DataQuality({ report }: { report: BoardReport }) {
       </div>
 
       <div className="rounded-xl border border-[var(--hairline)] bg-[var(--surface)] p-5">
-        <h2 className="text-sm font-semibold">What this report cannot tell you</h2>
+        <h2 className="font-display text-sm font-semibold">What this report cannot tell you</h2>
         <p className="mt-1 text-[11px] text-[var(--muted)]">
           Documented limits of the source corpus.
         </p>

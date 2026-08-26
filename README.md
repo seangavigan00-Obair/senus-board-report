@@ -78,8 +78,22 @@ are `NOT NULL`. A figure nobody can trace cannot be inserted.
 Python 3.14 · `anthropic` 1.1 · Pydantic · pypdf · Pillow · PostgreSQL ·
 Next.js 16.3 · React 19.2 · TypeScript · Tailwind 4
 
-No charting library. The report has five metric shapes; a 100 kB dependency to
-draw a polyline is weight a board pack doesn't need. Charts are inline SVG.
+No charting library. The report has four chart shapes; a 100 kB dependency to
+draw polylines and rectangles is weight a board pack doesn't need. Charts are
+inline SVG.
+
+### Brand
+
+Colours and typefaces are taken from senus.com's own design tokens rather than
+sampled by eye — `#20948B` teal, `#023C28` deep forest green, Figtree for
+headings and Mulish for body. The deep green anchors the navigation the way the
+site uses it for hero sections.
+
+One deliberate departure: white text on the brand teal measures **3.70:1**, which
+fails WCAG AA for normal text. senus.com does this on its buttons. A board report
+should not, so `--accent` stays the true brand teal for chart fills (where the
+3:1 non-text threshold applies and it passes) and `--accent-strong` (`#17706A`,
+5.90:1) carries anything with white text on it. Same hue, same brand, legible.
 
 ---
 

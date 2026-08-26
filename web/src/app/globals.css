@@ -1,47 +1,76 @@
 @import "tailwindcss";
 
 /*
- * Palette for a board pack.
+ * Senus brand palette.
  *
- * Restrained on purpose: this is a document a director reads before a meeting,
- * not a monitoring wall. Colour is reserved for the two things that carry
- * meaning - direction of travel, and severity - so that a red figure means
- * something has gone wrong rather than being decoration.
+ * Taken from the live site's own design tokens rather than sampled by eye:
+ *   --e-global-color-secondary  #20948B  teal, used for every button
+ *   --e-global-color-text       #023C28  deep forest green
+ *   --e-global-color-primary    #212121  near-black body text
+ * Typefaces are Figtree (headings) and Mulish (body), also from the site.
+ *
+ * One decision worth stating. Teal is the brand's action colour, and it is also
+ * green - which in a financial report is the colour of "good". Rather than fight
+ * that, the semantic positive IS the brand teal, and negative is a warm
+ * terracotta that sits with it instead of the pure red that would clash. Colour
+ * is reserved for direction of travel and severity; nothing else is coloured, so
+ * a red figure always means something.
+ *
+ * The deep forest green anchors the navigation in both light and dark mode, the
+ * way the site uses it for its hero sections. It is the one element that stays
+ * constant, so the product reads as Senus at a glance.
+ *
+ * Accessibility note. White text on the brand teal #20948B is 3.70:1, which
+ * fails WCAG AA for normal text (4.5:1). senus.com does exactly this on its
+ * buttons; a board report should not. So --accent stays the true brand teal and
+ * is used for chart fills, where the 3:1 non-text threshold applies and it
+ * passes, while --accent-strong is a deepened teal used wherever white text sits
+ * on top. Same hue, same brand, legible.
  */
 :root {
-  --bg: #f7f7f5;
+  --bg: #f5f7f6;
   --surface: #ffffff;
-  --text: #16181d;
-  --muted: #6b7280;
-  --hairline: #e3e3df;
-  --chip: #f1f1ee;
+  --text: #212121;
+  --muted: #5f6b66;
+  --hairline: #e2e8e5;
+  --chip: #eef2f0;
 
-  --accent: #1f5c46;
+  --brand-deep: #023c28;
+  --brand-deep-text: #dfece6;
+  --brand-deep-muted: #8fae9f;
+
+  --accent: #20948b;          /* brand teal - chart fills, 3.70:1 on white */
+  --accent-strong: #17706a;   /* deepened - surfaces carrying white text, 5.90:1 */
   --accent-text: #ffffff;
 
-  --positive: #1f7a52;
-  --negative: #b3352b;
-  --negative-wash: #fdf2f1;
-  --warning: #b57614;
+  --positive: #1a7d75;
+  --negative: #c0473a;
+  --negative-wash: #fcf1ef;
+  --warning: #b8801f;
   --warning-wash: #fdf7ec;
-  --warning-text: #8a5a0f;
+  --warning-text: #8a5f14;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #101114;
-    --surface: #191b1f;
-    --text: #eceef2;
-    --muted: #9aa1ad;
-    --hairline: #2a2d33;
-    --chip: #22252a;
+    --bg: #0b1512;
+    --surface: #12201b;
+    --text: #e8efeb;
+    --muted: #93a39c;
+    --hairline: #24352e;
+    --chip: #1a2b24;
 
-    --accent: #4cae86;
-    --accent-text: #0d1512;
+    --brand-deep: #02291b;
+    --brand-deep-text: #dfece6;
+    --brand-deep-muted: #7d9a8c;
 
-    --positive: #4cae86;
-    --negative: #e0705f;
-    --negative-wash: #2a1b19;
+    --accent: #3fb5aa;
+    --accent-strong: #3fb5aa;   /* 6.7:1 against --accent-text in dark mode */
+    --accent-text: #04211a;
+
+    --positive: #3fb5aa;
+    --negative: #e07a69;
+    --negative-wash: #2a1a17;
     --warning: #d9a441;
     --warning-wash: #2a2318;
     --warning-text: #d9a441;
@@ -49,33 +78,46 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #101114;
-  --surface: #191b1f;
-  --text: #eceef2;
-  --muted: #9aa1ad;
-  --hairline: #2a2d33;
-  --chip: #22252a;
+  --bg: #0b1512;
+  --surface: #12201b;
+  --text: #e8efeb;
+  --muted: #93a39c;
+  --hairline: #24352e;
+  --chip: #1a2b24;
 
-  --accent: #4cae86;
-  --accent-text: #0d1512;
+  --brand-deep: #02291b;
+  --brand-deep-text: #dfece6;
+  --brand-deep-muted: #7d9a8c;
 
-  --positive: #4cae86;
-  --negative: #e0705f;
-  --negative-wash: #2a1b19;
+  --accent: #3fb5aa;
+  --accent-strong: #3fb5aa;
+  --accent-text: #04211a;
+
+  --positive: #3fb5aa;
+  --negative: #e07a69;
+  --negative-wash: #2a1a17;
   --warning: #d9a441;
   --warning-wash: #2a2318;
   --warning-text: #d9a441;
 }
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-mulish);
+  --font-display: var(--font-figtree);
 }
 
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-mulish), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-figtree), var(--font-mulish), ui-sans-serif, sans-serif;
+  letter-spacing: -0.011em;
 }
 
 /* Figures line up in columns; that is the whole point of a financial table. */
