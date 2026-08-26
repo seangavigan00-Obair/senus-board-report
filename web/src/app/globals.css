@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/*
+ * Palette for a board pack.
+ *
+ * Restrained on purpose: this is a document a director reads before a meeting,
+ * not a monitoring wall. Colour is reserved for the two things that carry
+ * meaning - direction of travel, and severity - so that a red figure means
+ * something has gone wrong rather than being decoration.
+ */
+:root {
+  --bg: #f7f7f5;
+  --surface: #ffffff;
+  --text: #16181d;
+  --muted: #6b7280;
+  --hairline: #e3e3df;
+  --chip: #f1f1ee;
+
+  --accent: #1f5c46;
+  --accent-text: #ffffff;
+
+  --positive: #1f7a52;
+  --negative: #b3352b;
+  --negative-wash: #fdf2f1;
+  --warning: #b57614;
+  --warning-wash: #fdf7ec;
+  --warning-text: #8a5a0f;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101114;
+    --surface: #191b1f;
+    --text: #eceef2;
+    --muted: #9aa1ad;
+    --hairline: #2a2d33;
+    --chip: #22252a;
+
+    --accent: #4cae86;
+    --accent-text: #0d1512;
+
+    --positive: #4cae86;
+    --negative: #e0705f;
+    --negative-wash: #2a1b19;
+    --warning: #d9a441;
+    --warning-wash: #2a2318;
+    --warning-text: #d9a441;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #101114;
+  --surface: #191b1f;
+  --text: #eceef2;
+  --muted: #9aa1ad;
+  --hairline: #2a2d33;
+  --chip: #22252a;
+
+  --accent: #4cae86;
+  --accent-text: #0d1512;
+
+  --positive: #4cae86;
+  --negative: #e0705f;
+  --negative-wash: #2a1b19;
+  --warning: #d9a441;
+  --warning-wash: #2a2318;
+  --warning-text: #d9a441;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Figures line up in columns; that is the whole point of a financial table. */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,5759 @@
+[
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -590256.0,
+      "label_as_printed": "The loss for the financial year after providing for depreciation and taxation amounted to",
+      "value_as_printed": "\u20ac(590,256)",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 4,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:23:43+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1098095.0,
+      "label_as_printed": "The loss for the financial year after providing for depreciation and taxation amounted to (2024 -",
+      "value_as_printed": "\u20ac(1,098,095)",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 4,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:23:43+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "FY2026",
+      "value": 830000.0,
+      "label_as_printed": "In October 2025, the Company successfully completed a new financing round, raising \u20ac830,000",
+      "value_as_printed": "\u20ac830,000",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Post balance sheet event; financing round completed October 2025, i.e. within FY2026. Accompanied by issue of 15,223 ordinary shares of \u20ac0.001 nominal value each."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 5,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:23:49+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "FY2025",
+      "value": 836991.0,
+      "label_as_printed": "Turnover",
+      "value_as_printed": "836,991",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "FY2024",
+      "value": 688317.0,
+      "label_as_printed": "Turnover",
+      "value_as_printed": "688,317",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cost_of_sales",
+      "period": "FY2025",
+      "value": -188541.0,
+      "label_as_printed": "Cost of sales",
+      "value_as_printed": "(188,541)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cost_of_sales",
+      "period": "FY2024",
+      "value": -255840.0,
+      "label_as_printed": "Cost of sales",
+      "value_as_printed": "(255,840)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "FY2025",
+      "value": 648450.0,
+      "label_as_printed": "Gross profit",
+      "value_as_printed": "648,450",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "FY2024",
+      "value": 432477.0,
+      "label_as_printed": "Gross profit",
+      "value_as_printed": "432,477",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "distribution_costs",
+      "period": "FY2025",
+      "value": -1084.0,
+      "label_as_printed": "Distribution costs",
+      "value_as_printed": "(1,084)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "distribution_costs",
+      "period": "FY2024",
+      "value": -2353.0,
+      "label_as_printed": "Distribution costs",
+      "value_as_printed": "(2,353)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "administrative_expenses",
+      "period": "FY2025",
+      "value": -1286058.0,
+      "label_as_printed": "Administrative expenses",
+      "value_as_printed": "(1,286,058)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "administrative_expenses",
+      "period": "FY2024",
+      "value": -1560853.0,
+      "label_as_printed": "Administrative expenses",
+      "value_as_printed": "(1,560,853)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_operating_income",
+      "period": "FY2025",
+      "value": 4998.0,
+      "label_as_printed": "Other operating income",
+      "value_as_printed": "4,998",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_operating_income",
+      "period": "FY2024",
+      "value": 0.0,
+      "label_as_printed": "Other operating income",
+      "value_as_printed": "-",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "FY2025",
+      "value": -633694.0,
+      "label_as_printed": "Group operating loss",
+      "value_as_printed": "(633,694)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "FY2024",
+      "value": -1130729.0,
+      "label_as_printed": "Group operating loss",
+      "value_as_printed": "(1,130,729)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "FY2025",
+      "value": 0.0,
+      "label_as_printed": "Other gains and losses",
+      "value_as_printed": "-",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "FY2024",
+      "value": 319.0,
+      "label_as_printed": "Other gains and losses",
+      "value_as_printed": "319",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "FY2025",
+      "value": -2074.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "(2,074)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "FY2024",
+      "value": -48.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "(48)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "FY2025",
+      "value": -635768.0,
+      "label_as_printed": "Loss before taxation",
+      "value_as_printed": "(635,768)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "FY2024",
+      "value": -1130458.0,
+      "label_as_printed": "Loss before taxation",
+      "value_as_printed": "(1,130,458)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "FY2025",
+      "value": 45512.0,
+      "label_as_printed": "Tax on loss",
+      "value_as_printed": "45,512",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Tax credit, presented as a positive addition to loss before taxation."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "FY2024",
+      "value": 32363.0,
+      "label_as_printed": "Tax on loss",
+      "value_as_printed": "32,363",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Tax credit, presented as a positive addition to loss before taxation."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -590256.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(590,256)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1098095.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(1,098,095)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 10,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:23+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2025",
+      "value": 48788.0,
+      "label_as_printed": "Tangible assets",
+      "value_as_printed": "48,788",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2024",
+      "value": 65390.0,
+      "label_as_printed": "Tangible assets",
+      "value_as_printed": "65,390",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2025",
+      "value": 123003.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "123,003",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2024",
+      "value": 174730.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "174,730",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2025",
+      "value": 140135.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "140,135",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2024",
+      "value": 424639.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "424,639",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "FY2025",
+      "value": -243846.0,
+      "label_as_printed": "Creditors: amounts falling due within one year",
+      "value_as_printed": "(243,846)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "FY2024",
+      "value": -90078.0,
+      "label_as_printed": "Creditors: amounts falling due within one year",
+      "value_as_printed": "(90,078)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2025",
+      "value": -83655.0,
+      "label_as_printed": "Creditors: amounts falling due after more than one year",
+      "value_as_printed": "(83,655)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2024",
+      "value": 0.0,
+      "label_as_printed": "Creditors: amounts falling due after more than one year",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Nil shown as a dash."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2025",
+      "value": -15575.0,
+      "label_as_printed": "Net (Liabilities)/Assets",
+      "value_as_printed": "(15,575)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2024",
+      "value": 574681.0,
+      "label_as_printed": "Net (Liabilities)/Assets",
+      "value_as_printed": "574,681",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2025",
+      "value": 144.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2024",
+      "value": 144.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2025",
+      "value": 849962.0,
+      "label_as_printed": "Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2024",
+      "value": 849962.0,
+      "label_as_printed": "Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -865681.0,
+      "label_as_printed": "Retained earnings",
+      "value_as_printed": "(865,681)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2024",
+      "value": -275425.0,
+      "label_as_printed": "Retained earnings",
+      "value_as_printed": "(275,425)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:39+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2025",
+      "value": 48579.0,
+      "label_as_printed": "Tangible assets",
+      "value_as_printed": "48,579",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2024",
+      "value": 65113.0,
+      "label_as_printed": "Tangible assets",
+      "value_as_printed": "65,113",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2025",
+      "value": 80353.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "80,353",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2024",
+      "value": 173267.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "173,267",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2025",
+      "value": 136511.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "136,511",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2024",
+      "value": 420365.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "420,365",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "FY2025",
+      "value": -106839.0,
+      "label_as_printed": "Creditors: Amounts falling due within one year",
+      "value_as_printed": "(106,839)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "FY2024",
+      "value": 9774.0,
+      "label_as_printed": "Creditors: Amounts falling due within one year",
+      "value_as_printed": "9,774",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Printed without brackets as a positive 9,774 in the 2024 column, which is inconsistent with a creditors line; also does not reconcile with net current assets of 603,406 against current assets of 593,632 (593,632 + 9,774 = 603,406, implying the figure is added rather than deducted). Recorded as printed."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2025",
+      "value": -83655.0,
+      "label_as_printed": "Amounts falling due after more than one year",
+      "value_as_printed": "(83,655)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2024",
+      "value": 0.0,
+      "label_as_printed": "Amounts falling due after more than one year",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2025",
+      "value": 74949.0,
+      "label_as_printed": "Net Assets",
+      "value_as_printed": "74,949",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2024",
+      "value": 668519.0,
+      "label_as_printed": "Net Assets",
+      "value_as_printed": "668,519",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2025",
+      "value": 144.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2024",
+      "value": 144.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2025",
+      "value": 849963.0,
+      "label_as_printed": "Share premium account",
+      "value_as_printed": "849,963",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2024",
+      "value": 849963.0,
+      "label_as_printed": "Share premium account",
+      "value_as_printed": "849,963",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -775158.0,
+      "label_as_printed": "Retained earnings",
+      "value_as_printed": "(775,158)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2024",
+      "value": -181588.0,
+      "label_as_printed": "Retained earnings",
+      "value_as_printed": "(181,588)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:24:56+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2023",
+      "value": 800114.0,
+      "label_as_printed": "At 1 July 2023 - Called up share capital",
+      "value_as_printed": "800,114",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2023, i.e. the closing position of the year ended 30 June 2023. Note the unexplained fall to 144 at 30 June 2024 with no movement row printed in the share capital column."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2023",
+      "value": 849962.0,
+      "label_as_printed": "At 1 July 2023 - Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2023 (closing position of FY2023)."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2023",
+      "value": 822670.0,
+      "label_as_printed": "At 1 July 2023 - Retained earnings",
+      "value_as_printed": "822,670",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2023 (closing position of FY2023)."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2023",
+      "value": 2472746.0,
+      "label_as_printed": "At 1 July 2023 - Total",
+      "value_as_printed": "2,472,746",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening total equity at 1 July 2023 (closing position of FY2023)."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1098095.0,
+      "label_as_printed": "Loss for the financial year - Retained earnings",
+      "value_as_printed": "(1,098,095)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1098095.0,
+      "label_as_printed": "Loss for the financial year - Total",
+      "value_as_printed": "(1,098,095)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total column repeats the retained earnings movement for the year ended 30 June 2024."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2024",
+      "value": 144.0,
+      "label_as_printed": "At 30 June 2024 - Called up share capital",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Share capital falls from 800,114 at 1 July 2023 to 144 at 30 June 2024, yet the only movement row printed ('Loss for the financial year') shows a dash in this column - the reduction is unexplained on the face of the statement."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2024",
+      "value": 849962.0,
+      "label_as_printed": "At 30 June 2024 - Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2024",
+      "value": -275425.0,
+      "label_as_printed": "At 30 June 2024 - Retained earnings",
+      "value_as_printed": "(275,425)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2024",
+      "value": 574681.0,
+      "label_as_printed": "At 30 June 2024 - Total",
+      "value_as_printed": "574,681",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -590256.0,
+      "label_as_printed": "Loss for the financial year - Retained earnings",
+      "value_as_printed": "(590,256)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -590256.0,
+      "label_as_printed": "Loss for the financial year - Total",
+      "value_as_printed": "(590,256)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total column repeats the retained earnings movement for the year ended 30 June 2025."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2025",
+      "value": 144.0,
+      "label_as_printed": "At 30 June 2025 - Called up share capital",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2025",
+      "value": 849962.0,
+      "label_as_printed": "At 30 June 2025 - Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -865681.0,
+      "label_as_printed": "At 30 June 2025 - Retained earnings",
+      "value_as_printed": "(865,681)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2025",
+      "value": -15575.0,
+      "label_as_printed": "At 30 June 2025 - Total",
+      "value_as_printed": "(15,575)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Net liabilities position at 30 June 2025."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:17+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2023",
+      "value": 144.0,
+      "label_as_printed": "At 1 July 2023 - Called up share capital",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2023, i.e. closing position of FY2023"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2023",
+      "value": 849963.0,
+      "label_as_printed": "At 1 July 2023 - Share premium account",
+      "value_as_printed": "849,963",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2023, i.e. closing position of FY2023"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2023",
+      "value": 822670.0,
+      "label_as_printed": "At 1 July 2023 - Retained earnings",
+      "value_as_printed": "822,670",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2023, i.e. closing position of FY2023"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2023",
+      "value": 1672777.0,
+      "label_as_printed": "At 1 July 2023 - Total",
+      "value_as_printed": "1,672,777",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total equity at 1 July 2023, i.e. closing position of FY2023"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1004258.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(1,004,258)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company (parent) only; movement in the year to 30 June 2024"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2024",
+      "value": 144.0,
+      "label_as_printed": "At 30 June 2024 - Called up share capital",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2024",
+      "value": 849963.0,
+      "label_as_printed": "At 30 June 2024 - Share premium account",
+      "value_as_printed": "849,963",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2024",
+      "value": -181587.0,
+      "label_as_printed": "At 30 June 2024 - Retained earnings",
+      "value_as_printed": "(181,587)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2024",
+      "value": 668520.0,
+      "label_as_printed": "At 30 June 2024 - Total",
+      "value_as_printed": "668,520",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -593571.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(593,571)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company (parent) only; movement in the year to 30 June 2025"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2025",
+      "value": 144.0,
+      "label_as_printed": "At 30 June 2025 - Called up share capital",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2025",
+      "value": 849963.0,
+      "label_as_printed": "At 30 June 2025 - Share premium account",
+      "value_as_printed": "849,963",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -775158.0,
+      "label_as_printed": "At 30 June 2025 - Retained earnings",
+      "value_as_printed": "(775,158)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2025",
+      "value": 74949.0,
+      "label_as_printed": "At 30 June 2025 - Total",
+      "value_as_printed": "74,949",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 14,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:34+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -590256.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(590,256)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1098095.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(1,098,095)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "FY2024",
+      "value": -319.0,
+      "label_as_printed": "Fair value gains and losses",
+      "value_as_printed": "(319)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "FY2025 shown as nil ('-'). Presented as an adjustment within the cash flow reconciliation."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "FY2025",
+      "value": -2074.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "2,074",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back adjustment; sign normalised to reflect an expense."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "FY2024",
+      "value": -48.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "48",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back adjustment; sign normalised to reflect an expense."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "FY2025",
+      "value": 45512.0,
+      "label_as_printed": "Tax on loss on ordinary activities",
+      "value_as_printed": "(45,512)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed in brackets as a deduction in the reconciliation; represents a tax credit on a loss, hence positive."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "FY2024",
+      "value": 32363.0,
+      "label_as_printed": "Tax on loss on ordinary activities",
+      "value_as_printed": "(32,363)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed in brackets as a deduction in the reconciliation; represents a tax credit on a loss, hence positive."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "FY2025",
+      "value": -20381.0,
+      "label_as_printed": "Depreciation",
+      "value_as_printed": "20,381",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back; sign normalised as an expense."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "FY2024",
+      "value": -19412.0,
+      "label_as_printed": "Depreciation",
+      "value_as_printed": "19,412",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back; sign normalised as an expense."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_operations",
+      "period": "FY2025",
+      "value": -374820.0,
+      "label_as_printed": "Net cash used in operating activities",
+      "value_as_printed": "(374,820)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_operations",
+      "period": "FY2024",
+      "value": -1166697.0,
+      "label_as_printed": "Net cash used in operating activities",
+      "value_as_printed": "(1,166,697)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_investing",
+      "period": "FY2025",
+      "value": -3451.0,
+      "label_as_printed": "Net cash used in investment activities",
+      "value_as_printed": "(3,451)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_investing",
+      "period": "FY2024",
+      "value": -33472.0,
+      "label_as_printed": "Net cash used in investment activities",
+      "value_as_printed": "(33,472)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_financing",
+      "period": "FY2025",
+      "value": 93767.0,
+      "label_as_printed": "Net cash generated from/(used in) financing activities",
+      "value_as_printed": "93,767",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_financing",
+      "period": "FY2024",
+      "value": -3846.0,
+      "label_as_printed": "Net cash generated from/(used in) financing activities",
+      "value_as_printed": "(3,846)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "loan_repayment",
+      "period": "FY2025",
+      "value": -6233.0,
+      "label_as_printed": "Repayment of short term loan",
+      "value_as_printed": "(6,233)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "loan_repayment",
+      "period": "FY2024",
+      "value": -4360.0,
+      "label_as_printed": "Repayment of short term loan",
+      "value_as_printed": "(4,360)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2025",
+      "value": 140135.0,
+      "label_as_printed": "Cash and cash equivalents at end of financial year",
+      "value_as_printed": "140,135",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2024",
+      "value": 424639.0,
+      "label_as_printed": "Cash and cash equivalents at end of financial year",
+      "value_as_printed": "424,639",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 15,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:25:54+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "FY2025",
+      "value": -20381.0,
+      "label_as_printed": "Depreciation of tangible assets",
+      "value_as_printed": "20,381",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed as a positive charge in note 3 'Operating loss is stated after charging/(crediting)'; recorded as a cost."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 18,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:11+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "FY2024",
+      "value": -19412.0,
+      "label_as_printed": "Depreciation of tangible assets",
+      "value_as_printed": "19,412",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed as a positive charge; recorded as a cost."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 18,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:11+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "FY2025",
+      "value": 0.0,
+      "label_as_printed": "Foreign exchange",
+      "value_as_printed": "-",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 4 'Other Gains and Losses'; nil shown as a dash."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "FY2024",
+      "value": 319.0,
+      "label_as_printed": "Foreign exchange",
+      "value_as_printed": "319",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 4 'Other Gains and Losses'; printed without brackets, treated as a gain."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "FY2025",
+      "value": -2074.0,
+      "label_as_printed": "Interest",
+      "value_as_printed": "2,074",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 5 'Interest payable and similar expenses'; printed positive but is an expense, so sign-normalised to negative."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "FY2024",
+      "value": -48.0,
+      "label_as_printed": "Interest",
+      "value_as_printed": "48",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 5 'Interest payable and similar expenses'; printed positive but is an expense, so sign-normalised to negative."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "FY2025",
+      "value": -635768.0,
+      "label_as_printed": "Loss taxable at 12.50%",
+      "value_as_printed": "(635,768)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 7(b) reconciliation; this loss figure is the base multiplied by 12.50% to give (79,471), i.e. loss before tax."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "FY2024",
+      "value": -1130458.0,
+      "label_as_printed": "Loss taxable at 12.50%",
+      "value_as_printed": "(1,130,458)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 7(b) reconciliation; base for the 12.50% computation giving (141,307)."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "FY2025",
+      "value": 45512.0,
+      "label_as_printed": "Total current tax",
+      "value_as_printed": "(45,512)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 7(a). Printed in brackets, but the reconciliation in 7(b) shows the amount arises from a Research & Development credit (42,084) plus a prior-year adjustment (3,428), and the page states 'No charge to tax arises due to tax losses incurred' - so the amount is a tax credit (income) and is recorded positive. Reviewer should confirm against the profit and loss account presentation."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "FY2024",
+      "value": 32363.0,
+      "label_as_printed": "Total current tax",
+      "value_as_printed": "(32,363)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 7(a). Printed in brackets; treated as a credit consistent with the Research & Development credit of (32,363) in note 7(b) and the statement that no charge to tax arises."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 19,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:26:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2025",
+      "value": 48788.0,
+      "label_as_printed": "Net book value At 30 June 2025 (Group - Total)",
+      "value_as_printed": "48,788",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Group note 9; comprises Fixtures, fittings and equipment 37,681 and Motor vehicles 11,107"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2024",
+      "value": 65390.0,
+      "label_as_printed": "Net book value At 30 June 2024 (Group - Total)",
+      "value_as_printed": "65,390",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Group note 9; comprises Fixtures, fittings and equipment 49,983 and Motor vehicles 15,407"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "FY2025",
+      "value": -20381.0,
+      "label_as_printed": "Charge for the financial year (Group - Total)",
+      "value_as_printed": "20,381",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Depreciation charge printed unbracketed in the fixed asset table; recorded as a cost. Fixtures 16,081 and Motor vehicles 4,300"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2025",
+      "value": 48579.0,
+      "label_as_printed": "Net book value At 30 June 2025 (Company - Total)",
+      "value_as_printed": "48,579",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company-only figure; comprises Fixtures 37,472 and Motor vehicles 11,107"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2024",
+      "value": 65113.0,
+      "label_as_printed": "Net book value At 30 June 2024 (Company - Total)",
+      "value_as_printed": "65,113",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company-only figure; comprises Fixtures 49,706 and Motor vehicles 15,407"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "FY2025",
+      "value": -20313.0,
+      "label_as_printed": "Charge for the financial year (Company - Total)",
+      "value_as_printed": "20,313",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company-only depreciation charge; printed unbracketed, recorded as a cost"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2025",
+      "value": 123003.0,
+      "label_as_printed": "10. Debtors - Group (total)",
+      "value_as_printed": "123,003",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total of trade debtors 66,990, taxation 51,032, prepayments 6, accrued income 4,975"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2024",
+      "value": 174730.0,
+      "label_as_printed": "10. Debtors - Group (total)",
+      "value_as_printed": "174,730",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total of trade debtors 142,361, taxation 32,363, prepayments 6"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 20,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:06+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2025",
+      "value": 80353.0,
+      "label_as_printed": "Company - Trade debtors / Taxation / Prepayments / Accrued income (total)",
+      "value_as_printed": "80,353",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company (parent) debtors total, note 10 continued"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2024",
+      "value": 173267.0,
+      "label_as_printed": "Company - Trade debtors / Taxation / Prepayments / Accrued income (total)",
+      "value_as_printed": "173,267",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Company (parent) debtors total, note 10 continued"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2025",
+      "value": 140135.0,
+      "label_as_printed": "Cash and bank balances",
+      "value_as_printed": "140,135",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2024",
+      "value": 424639.0,
+      "label_as_printed": "Cash and bank balances",
+      "value_as_printed": "424,639",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "FY2025",
+      "value": -243846.0,
+      "label_as_printed": "Creditors - Amounts falling due within one year (Group) total",
+      "value_as_printed": "243,846",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Printed unbracketed; a liability so recorded negative"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "FY2024",
+      "value": -90078.0,
+      "label_as_printed": "Creditors - Amounts falling due within one year (Group) total",
+      "value_as_printed": "90,078",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Printed unbracketed; a liability so recorded negative"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2025",
+      "value": -83655.0,
+      "label_as_printed": "Group - Bank loan",
+      "value_as_printed": "83,655",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Note 13 Group creditors falling due after more than one year; printed unbracketed. Note that the loans maturity analysis below shows 10,500 + 34,500 + 38,655 = 83,655 beyond one year, consistent."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2024",
+      "value": 0.0,
+      "label_as_printed": "Group - Bank loan",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Nil, printed as dash"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 21,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:21+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2025",
+      "value": -83655.0,
+      "label_as_printed": "Bank loan",
+      "value_as_printed": "83,655",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Under heading 'Amounts falling due after more than one year' - Company column only"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 22,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:35+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "FY2024",
+      "value": 0.0,
+      "label_as_printed": "Bank loan",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Nil shown as dash"
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 22,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:35+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2025",
+      "value": 140135.0,
+      "label_as_printed": "Total Cash and cash equivalents (Note 11)",
+      "value_as_printed": "140,135",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Closing balance column of the net debt reconciliation."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 23,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:43+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "FY2026",
+      "value": 830000.0,
+      "label_as_printed": "In October 2025, the Company successfully completed a new financing round, raising \u20ac830,000",
+      "value_as_printed": "\u20ac830,000",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Post-balance sheet event; financing round completed October 2025, i.e. in FY2026. 15,223 ordinary shares of \u20ac0.001 nominal issued."
+    },
+    "provenance": {
+      "document": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+      "page": 23,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:43+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "HY2026",
+      "value": 354800.0,
+      "label_as_printed": "Group Revenue up 4.1% to \u20ac354.8k",
+      "value_as_printed": "\u20ac354.8k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "HY2025",
+      "value": 340900.0,
+      "label_as_printed": "Group Revenue (HY25: \u20ac340.9k)",
+      "value_as_printed": "\u20ac340.9k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "HY2026",
+      "value": 289900.0,
+      "label_as_printed": "Gross Profit up 6.5% to \u20ac289.9k",
+      "value_as_printed": "\u20ac289.9k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "HY2025",
+      "value": 272000.0,
+      "label_as_printed": "Gross Profit (HY25: \u20ac272.0k)",
+      "value_as_printed": "\u20ac272 .0k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "HY2026",
+      "value": -483800.0,
+      "label_as_printed": "Group operating loss and loss after tax of \u20ac483.8k",
+      "value_as_printed": "\u20ac483.8k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "HY2025",
+      "value": -405600.0,
+      "label_as_printed": "Group operating loss (HY25: \u20ac405.6k)",
+      "value_as_printed": "\u20ac405.6k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2026",
+      "value": -485100.0,
+      "label_as_printed": "loss after tax of \u20ac485.1k",
+      "value_as_printed": "\u20ac485.1k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2025",
+      "value": -406600.0,
+      "label_as_printed": "loss after tax (HY25: \u20ac406.6k)",
+      "value_as_printed": "\u20ac406.6k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2026",
+      "value": 735100.0,
+      "label_as_printed": "Cash and bank debt balances were \u20ac735.1k and \u20ac76.5k respectively at the end of the period",
+      "value_as_printed": "\u20ac735.1k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "enterprise_customers",
+      "period": "HY2026",
+      "value": 21.0,
+      "label_as_printed": "pipeline deals of approx. \u20ac700k across 21 enterprise customers closed in the period",
+      "value_as_printed": "21",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:27:53+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "HY2026",
+      "value": 1000000.0,
+      "label_as_printed": "Having raised over \u20ac1m from existing and new investors",
+      "value_as_printed": "over \u20ac1m",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": "Hedged figure ('over \u20ac1m'); narrative reference to fundraising alongside the Direct Listing of Senus on Euronext Access (admission 22 December 2025), so allocated to HY2026. No period explicitly stated in the text."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 2,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:00+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "HY2026",
+      "value": 1100000.0,
+      "label_as_printed": "We raised \u20ac1.1m in new capital from a mix of existing and new investors",
+      "value_as_printed": "\u20ac1.1m",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Narrative statement of new capital raised in the period; not taken from a cash flow statement."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "HY2026",
+      "value": 354800.0,
+      "label_as_printed": "Group Revenue",
+      "value_as_printed": "\u20ac354.8k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Stated as an increase of 4.1%"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "HY2025",
+      "value": 340900.0,
+      "label_as_printed": "Group Revenue (HY25)",
+      "value_as_printed": "\u20ac340.9k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "HY2026",
+      "value": 289900.0,
+      "label_as_printed": "Gross Profit",
+      "value_as_printed": "\u20ac289.9k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Stated as up 6.5%; gross margin of 81.7%"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "HY2025",
+      "value": 272000.0,
+      "label_as_printed": "Gross Profit (HY25)",
+      "value_as_printed": "\u20ac272k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Gross margin of 79.8%"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "HY2026",
+      "value": -483800.0,
+      "label_as_printed": "Group operating loss",
+      "value_as_printed": "\u20ac483.8k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Printed as a loss without brackets; sign normalised to negative"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "HY2025",
+      "value": -405600.0,
+      "label_as_printed": "Group operating loss (HY25)",
+      "value_as_printed": "\u20ac405.6k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Printed as a loss without brackets; sign normalised to negative"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2026",
+      "value": -485100.0,
+      "label_as_printed": "loss after tax",
+      "value_as_printed": "\u20ac485.1k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Printed as a loss without brackets; sign normalised to negative"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2025",
+      "value": -406600.0,
+      "label_as_printed": "loss after tax (HY25)",
+      "value_as_printed": "\u20ac406. 6k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Printed with a stray space in the source text ('\u20ac406. 6k'); read as \u20ac406.6k. Sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2026",
+      "value": 735100.0,
+      "label_as_printed": "Cash and bank debt balances",
+      "value_as_printed": "\u20ac735.1k",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Cash element of the combined 'Cash and bank debt balances' sentence at the period end"
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 3,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:15+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "HY2026",
+      "value": 354813.0,
+      "label_as_printed": "Turnover",
+      "value_as_printed": "354,813",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "HY2025",
+      "value": 340931.0,
+      "label_as_printed": "Turnover",
+      "value_as_printed": "340,931",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cost_of_sales",
+      "period": "HY2026",
+      "value": -64861.0,
+      "label_as_printed": "Cost of sales",
+      "value_as_printed": "64,861",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed unbracketed but is a deduction; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cost_of_sales",
+      "period": "HY2025",
+      "value": -69600.0,
+      "label_as_printed": "Cost of sales",
+      "value_as_printed": "69,600",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed unbracketed but is a deduction; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "HY2026",
+      "value": 289952.0,
+      "label_as_printed": "Gross Profit",
+      "value_as_printed": "289,952",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "HY2025",
+      "value": 272331.0,
+      "label_as_printed": "Gross Profit",
+      "value_as_printed": "272,331",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "distribution_costs",
+      "period": "HY2026",
+      "value": 0.0,
+      "label_as_printed": "Distribution costs",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "distribution_costs",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Distribution costs",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "administrative_expenses",
+      "period": "HY2026",
+      "value": -781975.0,
+      "label_as_printed": "Administrative expenses",
+      "value_as_printed": "781,975",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed unbracketed but is a deduction; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "administrative_expenses",
+      "period": "HY2025",
+      "value": -677908.0,
+      "label_as_printed": "Administrative expenses",
+      "value_as_printed": "677,908",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed unbracketed but is a deduction; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_operating_income",
+      "period": "HY2026",
+      "value": 8269.0,
+      "label_as_printed": "Other operating income",
+      "value_as_printed": "8,269",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_operating_income",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Other operating income",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "HY2026",
+      "value": -483753.0,
+      "label_as_printed": "Group operating loss",
+      "value_as_printed": "483,753",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Labelled as a loss and printed unbracketed; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "HY2025",
+      "value": -405577.0,
+      "label_as_printed": "Group operating loss",
+      "value_as_printed": "405,577",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Labelled as a loss and printed unbracketed; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "HY2026",
+      "value": 0.0,
+      "label_as_printed": "Other gains and losses",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "other_gains_and_losses",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Other gains and losses",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "HY2026",
+      "value": -1391.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "1,391",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed unbracketed but is an expense; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "HY2025",
+      "value": -1036.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "1,036",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Printed unbracketed but is an expense; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "HY2026",
+      "value": -485144.0,
+      "label_as_printed": "Loss before taxation",
+      "value_as_printed": "485,144",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Labelled as a loss and printed unbracketed; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "HY2025",
+      "value": -406613.0,
+      "label_as_printed": "Loss before taxation",
+      "value_as_printed": "406,613",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Labelled as a loss and printed unbracketed; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "HY2026",
+      "value": 0.0,
+      "label_as_printed": "Tax expense",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tax",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Tax expense",
+      "value_as_printed": "0",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2026",
+      "value": -485144.0,
+      "label_as_printed": "Loss for the period",
+      "value_as_printed": "485,144",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Labelled as a loss and printed unbracketed; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2025",
+      "value": -406613.0,
+      "label_as_printed": "Loss for the period",
+      "value_as_printed": "406,613",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Labelled as a loss and printed unbracketed; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "goodwill",
+      "period": "HY2026",
+      "value": 669550.0,
+      "label_as_printed": "Goodwill",
+      "value_as_printed": "669,550",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "goodwill",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Goodwill",
+      "value_as_printed": "0",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "development_costs",
+      "period": "HY2026",
+      "value": 239765.0,
+      "label_as_printed": "Development Costs",
+      "value_as_printed": "239,765",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "development_costs",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Development Costs",
+      "value_as_printed": "0",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "HY2026",
+      "value": 42006.0,
+      "label_as_printed": "Tangible Assets",
+      "value_as_printed": "42,006",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "HY2025",
+      "value": 65363.0,
+      "label_as_printed": "Tangible Assets",
+      "value_as_printed": "65,363",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "HY2026",
+      "value": 188149.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "188,149",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "HY2025",
+      "value": 211150.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "211,150",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2026",
+      "value": 735189.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "735,189",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2025",
+      "value": 72382.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "72,382",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "HY2026",
+      "value": -387105.0,
+      "label_as_printed": "Creditors: amounts falling due within one year",
+      "value_as_printed": "-387,105",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "HY2025",
+      "value": -90111.0,
+      "label_as_printed": "Creditors: amounts falling due within one year",
+      "value_as_printed": "-90,111",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:28:46+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "contingent_consideration",
+      "period": "HY2026",
+      "value": -850000.0,
+      "label_as_printed": "Contingent consideration",
+      "value_as_printed": "-850,000",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Only the first (current period) column carries a figure; comparative column blank. Balance sheet column headings are not visible on this page, so the comparative column has been assumed to be the same 31-Dec-24 comparative shown for the cash flow statement."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "HY2026",
+      "value": -76474.0,
+      "label_as_printed": "Creditors: amounts falling due after more than one year",
+      "value_as_printed": "-76,474",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "HY2025",
+      "value": -85468.0,
+      "label_as_printed": "Creditors: amounts falling due after more than one year",
+      "value_as_printed": "-85,468",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Comparative column heading not printed on this page; assumed 31-Dec-24 by reference to the cash flow statement columns."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "HY2026",
+      "value": 561081.0,
+      "label_as_printed": "Net (liabilities) / Assets",
+      "value_as_printed": "561,081",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Label reads 'Net (liabilities) / Assets' but the figure is printed positive, i.e. net assets."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "HY2025",
+      "value": 173316.0,
+      "label_as_printed": "Net (liabilities) / Assets",
+      "value_as_printed": "173,316",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "HY2026",
+      "value": 25000.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "25,000",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "HY2025",
+      "value": 144.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "HY2026",
+      "value": 300000.0,
+      "label_as_printed": "Share Premium",
+      "value_as_printed": "300,000",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "HY2025",
+      "value": 849963.0,
+      "label_as_printed": "Share Premium",
+      "value_as_printed": "849,963",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "HY2026",
+      "value": 236081.0,
+      "label_as_printed": "Retained Earnings",
+      "value_as_printed": "236,081",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "HY2025",
+      "value": -676790.0,
+      "label_as_printed": "Retained Earnings",
+      "value_as_printed": "-676,790",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2026",
+      "value": -485144.0,
+      "label_as_printed": "Loss for the 6 month period",
+      "value_as_printed": "-485,144",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2025",
+      "value": -406613.0,
+      "label_as_printed": "Loss for the 6 month period",
+      "value_as_printed": "-406,613",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "HY2026",
+      "value": -1391.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "1,391",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as a non-cash add-back in the cash flow statement; recorded negative as an expense. The separate 'Interest Paid' line shows -1,391 for the same period."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "HY2025",
+      "value": -1036.0,
+      "label_as_printed": "Interest payable and similar expenses",
+      "value_as_printed": "1,036",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back; recorded negative as an expense. Separate 'Interest Paid' line shows -1,036."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "HY2026",
+      "value": -10014.0,
+      "label_as_printed": "Depreciation",
+      "value_as_printed": "10,014",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back in the cash flow statement; recorded negative as a charge."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "HY2025",
+      "value": -10016.0,
+      "label_as_printed": "Depreciation",
+      "value_as_printed": "10,016",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Printed positive as an add-back in the cash flow statement; recorded negative as a charge."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_operations",
+      "period": "HY2026",
+      "value": -410291.0,
+      "label_as_printed": "Net Cash used in operating activities",
+      "value_as_printed": "-410,291",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_operations",
+      "period": "HY2025",
+      "value": -450181.0,
+      "label_as_printed": "Net Cash used in operating activities",
+      "value_as_printed": "-450,181",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 6,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:30+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_investing",
+      "period": "HY2026",
+      "value": -8500.0,
+      "label_as_printed": "Net Cash used in investment activities",
+      "value_as_printed": "-8,500",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_investing",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Net Cash used in investment activities",
+      "value_as_printed": "0",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "loan_repayment",
+      "period": "HY2026",
+      "value": -124837.0,
+      "label_as_printed": "Receipt / (Repayment) of loans",
+      "value_as_printed": "-124,837",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "loan_repayment",
+      "period": "HY2025",
+      "value": 97924.0,
+      "label_as_printed": "Receipt / (Repayment) of loans",
+      "value_as_printed": "97,924",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Positive figure: a net receipt of loans in the comparative period, not a repayment."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "HY2026",
+      "value": 1138683.0,
+      "label_as_printed": "Issue of new shares",
+      "value_as_printed": "1,138,683",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "HY2025",
+      "value": 0.0,
+      "label_as_printed": "Issue of new shares",
+      "value_as_printed": "0",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_financing",
+      "period": "HY2026",
+      "value": 1013846.0,
+      "label_as_printed": "Net Cash inflow from financing activities",
+      "value_as_printed": "1,013,846",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_financing",
+      "period": "HY2025",
+      "value": 97924.0,
+      "label_as_printed": "Net Cash inflow from financing activities",
+      "value_as_printed": "97,924",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2026",
+      "value": 735189.0,
+      "label_as_printed": "Cash and cash equivalent at end of period",
+      "value_as_printed": "735,189",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Opening cash 140,135 plus the printed net increase of 595,055 equals 735,190, one euro above the printed closing balance of 735,189 (apparent rounding difference)."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2025",
+      "value": 72382.0,
+      "label_as_printed": "Cash and cash equivalent at end of period",
+      "value_as_printed": "72,382",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 7,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:47+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "goodwill",
+      "period": "HY2026",
+      "value": 669500.0,
+      "label_as_printed": "Goodwill of \u20ac669,500 was recognised on the acquisition of Loamin Limited",
+      "value_as_printed": "\u20ac669,500",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Goodwill recognised on acquisition of Loamin Limited; no cash consideration paid on completion."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 8,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:51+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "contingent_consideration",
+      "period": "HY2026",
+      "value": -850000.0,
+      "label_as_printed": "contingent consideration of \u20ac850,000 has been recognised",
+      "value_as_printed": "\u20ac850,000",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Recognised as a liability representing estimated fair value of potential future performance-linked payments; sign normalised to negative."
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 8,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:51+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "FY2025",
+      "value": 836991.0,
+      "label_as_printed": "For the year ended 30 June 2025, Senus recorded revenue of",
+      "value_as_printed": "\u20ac836,991",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 9,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:55+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "customer_accounts",
+      "period": "FY2025",
+      "value": 138.0,
+      "label_as_printed": "serving 138 customer accounts",
+      "value_as_printed": "138",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 9,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:29:55+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "FY2025",
+      "value": 836991.0,
+      "label_as_printed": "Turnover",
+      "value_as_printed": "836,991",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "FY2024",
+      "value": 688317.0,
+      "label_as_printed": "Turnover",
+      "value_as_printed": "688,317",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "FY2025",
+      "value": 648450.0,
+      "label_as_printed": "Gross Profit",
+      "value_as_printed": "648,450",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "gross_profit",
+      "period": "FY2024",
+      "value": 432477.0,
+      "label_as_printed": "Gross Profit",
+      "value_as_printed": "432,477",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "FY2025",
+      "value": -633694.0,
+      "label_as_printed": "Operating Profit / (Loss)",
+      "value_as_printed": "(633,694)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "operating_profit",
+      "period": "FY2024",
+      "value": -1130729.0,
+      "label_as_printed": "Operating Profit / (Loss)",
+      "value_as_printed": "(1,130,729)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "FY2025",
+      "value": -635768.0,
+      "label_as_printed": "Profit / (Loss) Before Tax",
+      "value_as_printed": "(635,768)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_before_tax",
+      "period": "FY2024",
+      "value": -1130458.0,
+      "label_as_printed": "Profit / (Loss) Before Tax",
+      "value_as_printed": "(1,130,458)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2025",
+      "value": -590256.0,
+      "label_as_printed": "Profit / (Loss) After Tax",
+      "value_as_printed": "(590,256)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "FY2024",
+      "value": -1098095.0,
+      "label_as_printed": "Profit / (Loss) After Tax",
+      "value_as_printed": "(1,098,095)",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2025",
+      "value": -15575.0,
+      "label_as_printed": "Net (Liabilities) / Assets",
+      "value_as_printed": "(15,575)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2024",
+      "value": 574681.0,
+      "label_as_printed": "Net (Liabilities) / Assets",
+      "value_as_printed": "574,681",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -865681.0,
+      "label_as_printed": "Retained Earnings",
+      "value_as_printed": "(865,681)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2024",
+      "value": -275425.0,
+      "label_as_printed": "Retained Earnings",
+      "value_as_printed": "(275,425)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_operations",
+      "period": "FY2025",
+      "value": -374820.0,
+      "label_as_printed": "Cash flows from Operating Activities",
+      "value_as_printed": "(374,820)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_operations",
+      "period": "FY2024",
+      "value": -1166697.0,
+      "label_as_printed": "Cash flows from Operating Activities",
+      "value_as_printed": "(1,166,697)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_investing",
+      "period": "FY2025",
+      "value": -3451.0,
+      "label_as_printed": "Cash flows from Investing Activities",
+      "value_as_printed": "(3,451)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_investing",
+      "period": "FY2024",
+      "value": -33472.0,
+      "label_as_printed": "Cash flows from Investing Activities",
+      "value_as_printed": "(33,472)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_financing",
+      "period": "FY2025",
+      "value": 93767.0,
+      "label_as_printed": "Cash flows from Financing Activities",
+      "value_as_printed": "93,767",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_flow_from_financing",
+      "period": "FY2024",
+      "value": -3846.0,
+      "label_as_printed": "Cash flows from Financing Activities",
+      "value_as_printed": "(3,846)",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2025",
+      "value": 140135.0,
+      "label_as_printed": "Cash and cash equivalents at end of financial year",
+      "value_as_printed": "140,135",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2024",
+      "value": 424639.0,
+      "label_as_printed": "Cash and cash equivalents at end of financial year",
+      "value_as_printed": "424,639",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2023",
+      "value": 1628654.0,
+      "label_as_printed": "Cash and cash equivalents at beginning of financial year",
+      "value_as_printed": "1,628,654",
+      "statement": "cash_flow",
+      "is_approximate": false,
+      "note": "Opening cash for FY2024, i.e. closing balance at 30 June 2023."
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "administrative_expenses",
+      "period": "FY2025",
+      "value": -1286058.0,
+      "label_as_printed": "Administrative expenses decreased substantially by \u20ac274,795 (18%) to \u20ac1,286,058",
+      "value_as_printed": "1,286,058",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Narrative states a decrease of \u20ac274,795 which is described as 18%; \u20ac274,795 on a prior-year base of \u20ac1,560,853 is c.17.6%, so the stated percentage is rounded."
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2025",
+      "value": 66990.0,
+      "label_as_printed": "trade debtors ... to \u20ac66,990 as at 30 June 2025",
+      "value_as_printed": "66,990",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Trade debtors component only, not total debtors."
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "FY2024",
+      "value": 142361.0,
+      "label_as_printed": "a reduction in trade debtors from \u20ac142,361 as at 30 June 2024",
+      "value_as_printed": "142,361",
+      "statement": "narrative",
+      "is_approximate": false,
+      "note": "Trade debtors component only. Narrative says debtors reduced by \u20ac51,727 but the trade debtor movement shown is \u20ac75,371, an apparent inconsistency."
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 26,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "enterprise_customers",
+      "period": "FY2025",
+      "value": 36.0,
+      "label_as_printed": "Enterprise Customers",
+      "value_as_printed": "36",
+      "statement": "kpi",
+      "is_approximate": false,
+      "note": "Company provided its solution to 36 Enterprise customers during the financial year ended 30 June 2025."
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 27,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:31+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "acv_enterprise_soil",
+      "period": "FY2025",
+      "value": 12309.0,
+      "label_as_printed": "average Annual Contract Value with Enterprise Customers ... in Soil",
+      "value_as_printed": "\u20ac12,309",
+      "statement": "kpi",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 27,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:31+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "acv_enterprise_terrain",
+      "period": "FY2025",
+      "value": 21524.0,
+      "label_as_printed": "average Annual Contract Value with Enterprise Customers ... in Terrain",
+      "value_as_printed": "\u20ac21,524",
+      "statement": "kpi",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 27,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:31+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "acv_enterprise_era",
+      "period": "FY2025",
+      "value": 58900.0,
+      "label_as_printed": "average Annual Contract Value with Enterprise Customers ... in ERA",
+      "value_as_printed": "\u20ac58,900",
+      "statement": "kpi",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 27,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:31+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "revenue_share_ireland_pct",
+      "period": "FY2025",
+      "value": 78.0,
+      "label_as_printed": "Ireland accounted for approximately 78% of revenue in FY2025",
+      "value_as_printed": "78%",
+      "statement": "kpi",
+      "is_approximate": true,
+      "note": "Hedged with 'approximately'."
+    },
+    "provenance": {
+      "document": "Senus-PLC-Information-Document-December-2025.pdf",
+      "page": 27,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:31+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "turnover",
+      "period": "FY2026",
+      "value": 1000000.0,
+      "label_as_printed": "Revenue will close at almost \u20ac1.0 million",
+      "value_as_printed": "almost \u20ac1.0 million",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": "Hedged forward-looking statement; described as solid double-digit year on year growth compared to 2025."
+    },
+    "provenance": {
+      "document": "Senus_PR_AGMStatement_V08072026.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:41+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "revenue_share_enterprise_pct",
+      "period": "FY2026",
+      "value": 60.0,
+      "label_as_printed": "our Enterprise channel will have accounted for more than 60% of sales",
+      "value_as_printed": "more than 60%",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_PR_AGMStatement_V08072026.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:41+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "revenue_share_uk_pct",
+      "period": "FY2026",
+      "value": 20.0,
+      "label_as_printed": "approximately 20% of sales will have been generated from the UK",
+      "value_as_printed": "approximately 20%",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_PR_AGMStatement_V08072026.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:41+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "acv_enterprise_era",
+      "period": "FY2026",
+      "value": 125000.0,
+      "label_as_printed": "June was a record month for Senus ERA with closed sales in excess of \u20ac125,000",
+      "value_as_printed": "in excess of \u20ac125,000",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": "Monthly closed sales for June 2026 for Senus ERA, not an annualised contract value; mapping is approximate."
+    },
+    "provenance": {
+      "document": "Senus_PR_AGMStatement_V08072026.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:41+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "annualised_cost_reduction",
+      "period": "FY2026",
+      "value": -400000.0,
+      "label_as_printed": "take out operating costs of close to \u20ac0.4 million on an annualised basis",
+      "value_as_printed": "close to \u20ac0.4 million",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_PR_AGMStatement_V08072026.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:41+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "FY2026",
+      "value": 130000.0,
+      "label_as_printed": "The Company\u2019s cash position at the year end is approximately \u20ac0.13 million",
+      "value_as_printed": "approximately \u20ac0.13 million",
+      "statement": "narrative",
+      "is_approximate": true,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus_PR_AGMStatement_V08072026.pdf",
+      "page": 1,
+      "extraction_path": "native_text",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:30:41+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "HY2026",
+      "value": 38113.0,
+      "label_as_printed": "Tangible assets",
+      "value_as_printed": "38,113",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Balance sheet dated as at 08 December 2025 (a date within the six months ended 31 December 2025), not a standard period end."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "HY2026",
+      "value": 261713.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "261,713",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "cash_and_cash_equivalents",
+      "period": "HY2026",
+      "value": 528379.0,
+      "label_as_printed": "Cash and cash equivalents",
+      "value_as_printed": "528,379",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "HY2026",
+      "value": -276030.0,
+      "label_as_printed": "Creditors: amounts falling due within one year",
+      "value_as_printed": "(276,030)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "HY2026",
+      "value": -79155.0,
+      "label_as_printed": "Creditors: amounts falling due after more than one year",
+      "value_as_printed": "(79,155)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "HY2026",
+      "value": 473023.0,
+      "label_as_printed": "Net Assets",
+      "value_as_printed": "473,023",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "HY2026",
+      "value": 25000.0,
+      "label_as_printed": "Called up share capital presented as equity",
+      "value_as_printed": "25,000",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "HY2026",
+      "value": 0.0,
+      "label_as_printed": "Share premium account",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Printed as a dash (nil)."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "HY2026",
+      "value": 448023.0,
+      "label_as_printed": "Retained earnings",
+      "value_as_printed": "448,023",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 6,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:20+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "FY2025",
+      "value": 144.0,
+      "label_as_printed": "At 30 June 2025 - Called up share capital",
+      "value_as_printed": "144",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2025",
+      "value": 849962.0,
+      "label_as_printed": "At 30 June 2025 - Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -775157.0,
+      "label_as_printed": "At 30 June 2025 - Retained earnings",
+      "value_as_printed": "(775,157)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "FY2025",
+      "value": 74949.0,
+      "label_as_printed": "At 30 June 2025 - Total",
+      "value_as_printed": "74,949",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2026",
+      "value": -431931.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(431,931)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Movement in the period from 1 July 2025 to 08 December 2025; the statement is headed 'as at 08 December 2025' yet the line is labelled 'Loss for the financial year'. Recorded against HY2026 as the nearest available period id."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "HY2026",
+      "value": 24856.0,
+      "label_as_printed": "Net proceeds of equity ordinary share issue - Called up share capital",
+      "value_as_printed": "24,856",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Movement, not a closing balance."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "HY2026",
+      "value": 829989.0,
+      "label_as_printed": "Net proceeds of equity ordinary share issue - Share premium account",
+      "value_as_printed": "829,989",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Movement, not a closing balance."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_issuance_proceeds",
+      "period": "HY2026",
+      "value": 854845.0,
+      "label_as_printed": "Net proceeds of equity ordinary share issue - Total",
+      "value_as_printed": "854,845",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_capital",
+      "period": "HY2026",
+      "value": 25000.0,
+      "label_as_printed": "At 08 December 2025 - Called up share capital",
+      "value_as_printed": "25,000",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "HY2026",
+      "value": 0.0,
+      "label_as_printed": "At 08 December 2025 - Share premium account",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "HY2026",
+      "value": 448023.0,
+      "label_as_printed": "At 08 December 2025 - Retained earnings",
+      "value_as_printed": "448,023",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "net_assets",
+      "period": "HY2026",
+      "value": 473023.0,
+      "label_as_printed": "At 08 December 2025 - Total",
+      "value_as_printed": "473,023",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": null
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 7,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:31:37+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "HY2026",
+      "value": -10014.0,
+      "label_as_printed": "Depreciation of tangible assets",
+      "value_as_printed": "10,014",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 4 'Operating loss is stated after charging/(crediting)'. Period is 'for the period ended 08 December 2025' (from 1 July 2025), i.e. a stub period within FY2026, mapped to HY2026 as the nearest available period id."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:10+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "interest_payable",
+      "period": "HY2026",
+      "value": -666.0,
+      "label_as_printed": "Interest",
+      "value_as_printed": "666",
+      "statement": "profit_and_loss",
+      "is_approximate": false,
+      "note": "Note 5 'Interest payable and similar expenses', column headed 08 Dec 2025."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:10+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "depreciation",
+      "period": "HY2026",
+      "value": -10014.0,
+      "label_as_printed": "Charge for the financial year",
+      "value_as_printed": "10,014",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total column of the tangible assets note; same amount as the depreciation charge disclosed in note 4 (Fixtures, fittings and equipment 7,866 + Motor vehicles 2,148)."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:10+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "HY2026",
+      "value": 38113.0,
+      "label_as_printed": "Net book value At 08 December 2025",
+      "value_as_printed": "38,113",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total column; components Fixtures, fittings and equipment 29,154 and Motor vehicles 8,959."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:10+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "tangible_assets",
+      "period": "FY2025",
+      "value": 48579.0,
+      "label_as_printed": "At 30 June 2025",
+      "value_as_printed": "48,579",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Net book value comparative; components Fixtures, fittings and equipment 37,472 and Motor vehicles 11,107."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 11,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:10+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "debtors",
+      "period": "HY2026",
+      "value": 261713.0,
+      "label_as_printed": "Debtors",
+      "value_as_printed": "261,713",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total of note 8 at 08 Dec 2025; period ended 08 December 2025 mapped to HY2026 (financial year 2026). No comparative column presented."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_within_one_year",
+      "period": "HY2026",
+      "value": -276030.0,
+      "label_as_printed": "Creditors Amounts falling due within one year",
+      "value_as_printed": "276,030",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Total of note 9 at 08 Dec 2025, printed unbracketed but is a liability so sign-normalised negative."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 12,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:24+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "creditors_after_one_year",
+      "period": "HY2026",
+      "value": -79155.0,
+      "label_as_printed": "Bank loan",
+      "value_as_printed": "79,155",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Note 10 'Creditors - Amounts falling due after more than one year' as at 08 Dec 2025; period ended 08 December 2025 mapped to HY2026 as the nearest listed period id (period from 1 July 2025)."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "FY2025",
+      "value": 849962.0,
+      "label_as_printed": "At 1 July 2025 - Share premium account",
+      "value_as_printed": "849,962",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2025, i.e. closing balance at 30 June 2025."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "FY2025",
+      "value": -775157.0,
+      "label_as_printed": "At 1 July 2025 - Profit and loss account",
+      "value_as_printed": "(775,157)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Opening balance at 1 July 2025, i.e. closing balance at 30 June 2025."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "profit_after_tax",
+      "period": "HY2026",
+      "value": -431931.0,
+      "label_as_printed": "Loss for the financial year",
+      "value_as_printed": "(431,931)",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Reserves movement for the period 1 July 2025 to 08 December 2025; described as 'loss for the financial year' although the period is under six months."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "share_premium",
+      "period": "HY2026",
+      "value": 0.0,
+      "label_as_printed": "At 08 December 2025 - Share premium account",
+      "value_as_printed": "-",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Nil following capital reduction applied to share premium on 8 December 2025."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:45+00:00"
+    }
+  },
+  {
+    "fact": {
+      "metric": "retained_earnings",
+      "period": "HY2026",
+      "value": 448023.0,
+      "label_as_printed": "At 08 December 2025 - Profit and loss account",
+      "value_as_printed": "448,023",
+      "statement": "balance_sheet",
+      "is_approximate": false,
+      "note": "Period ended 08 December 2025 mapped to HY2026."
+    },
+    "provenance": {
+      "document": "Senus-Limited-Company-Balance-Sheet-as-at-8-December-2025.pdf",
+      "page": 13,
+      "extraction_path": "vision",
+      "model": "claude-opus-5",
+      "extracted_at": "2026-08-26T17:32:45+00:00"
+    }
+  }
+]

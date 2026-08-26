@@ -1,0 +1,2010 @@
+{
+  "build": {
+    "generated_at": "2026-08-26T17:45:17+00:00",
+    "fact_source": "golden_set",
+    "fact_source_file": "golden_set.json",
+    "metric_count": 55,
+    "period_count": 8,
+    "content_hash": "1507f188c7a7bcbe"
+  },
+  "entity": {
+    "current_name": "Senus PLC",
+    "former_name": "ADF Farm Solutions Limited",
+    "renamed_on": "2025-12-10",
+    "registered_number": "605800",
+    "isin": "IE000O0F49R3",
+    "ticker": "SENUS",
+    "venue": "Euronext Access+ Dublin",
+    "admission_date": "2025-12-22",
+    "issued_share_capital": 2561332,
+    "financial_year_end": "06-30"
+  },
+  "currency": "EUR",
+  "periods": [
+    {
+      "id": "FY2023",
+      "label": "FY2023",
+      "type": "annual",
+      "starts_on": "2022-07-01",
+      "ends_on": "2023-06-30",
+      "months": 12,
+      "is_audited": false,
+      "is_derived": false,
+      "basis": null
+    },
+    {
+      "id": "FY2024",
+      "label": "FY2024",
+      "type": "annual",
+      "starts_on": "2023-07-01",
+      "ends_on": "2024-06-30",
+      "months": 12,
+      "is_audited": true,
+      "is_derived": false,
+      "basis": null
+    },
+    {
+      "id": "HY2025",
+      "label": "H1 FY2025",
+      "type": "half_year",
+      "starts_on": "2024-07-01",
+      "ends_on": "2024-12-31",
+      "months": 6,
+      "is_audited": false,
+      "is_derived": false,
+      "basis": null
+    },
+    {
+      "id": "H2FY2025",
+      "label": "H2 FY2025",
+      "type": "half_year",
+      "starts_on": "2025-01-01",
+      "ends_on": "2025-06-30",
+      "months": 6,
+      "is_audited": false,
+      "is_derived": true,
+      "basis": "Derived by subtraction: full year less first half. No second-half figures are published separately."
+    },
+    {
+      "id": "FY2025",
+      "label": "FY2025",
+      "type": "annual",
+      "starts_on": "2024-07-01",
+      "ends_on": "2025-06-30",
+      "months": 12,
+      "is_audited": true,
+      "is_derived": false,
+      "basis": null
+    },
+    {
+      "id": "HY2026",
+      "label": "H1 FY2026",
+      "type": "half_year",
+      "starts_on": "2025-07-01",
+      "ends_on": "2025-12-31",
+      "months": 6,
+      "is_audited": false,
+      "is_derived": false,
+      "basis": null
+    },
+    {
+      "id": "H2FY2026",
+      "label": "H2 FY2026",
+      "type": "half_year",
+      "starts_on": "2026-01-01",
+      "ends_on": "2026-06-30",
+      "months": 6,
+      "is_audited": false,
+      "is_derived": true,
+      "basis": "Derived by subtraction: full year less first half. No second-half figures are published separately."
+    },
+    {
+      "id": "FY2026",
+      "label": "FY2026",
+      "type": "annual",
+      "starts_on": "2025-07-01",
+      "ends_on": "2026-06-30",
+      "months": 12,
+      "is_audited": false,
+      "is_derived": false,
+      "basis": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "growth",
+      "title": "Growth & Revenue",
+      "metrics": [
+        "revenue",
+        "revenue_growth_yoy"
+      ],
+      "audiences": [
+        "management",
+        "board",
+        "equity",
+        "credit"
+      ]
+    },
+    {
+      "id": "profitability",
+      "title": "Profitability",
+      "metrics": [
+        "gross_margin",
+        "operating_margin",
+        "ebitda",
+        "ebitda_margin",
+        "admin_cost_ratio"
+      ],
+      "audiences": [
+        "management",
+        "board",
+        "equity"
+      ]
+    },
+    {
+      "id": "liquidity",
+      "title": "Cash & Liquidity",
+      "metrics": [
+        "cash_runway",
+        "monthly_burn",
+        "working_capital"
+      ],
+      "audiences": [
+        "management",
+        "board",
+        "equity",
+        "credit"
+      ]
+    },
+    {
+      "id": "solvency",
+      "title": "Solvency & Leverage",
+      "metrics": [
+        "dscr"
+      ],
+      "audiences": [
+        "board",
+        "credit"
+      ]
+    },
+    {
+      "id": "returns",
+      "title": "Returns",
+      "metrics": [
+        "roce"
+      ],
+      "audiences": [
+        "board",
+        "equity"
+      ]
+    }
+  ],
+  "audience_headline": {
+    "management": "monthly_burn",
+    "board": "cash_runway",
+    "equity": "revenue_growth_yoy",
+    "credit": "cash_runway"
+  },
+  "metrics": [
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "FY2024",
+      "value": 688317.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "turnover",
+          "value": 688317.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "gross_margin",
+      "label": "Gross margin",
+      "period": "FY2024",
+      "value": 62.83107928469005,
+      "unit": "pct",
+      "formula": "gross profit / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "gross_profit",
+          "value": 432477.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "turnover",
+          "value": 688317.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "operating_margin",
+      "label": "Operating margin",
+      "period": "FY2024",
+      "value": -164.2744549386402,
+      "unit": "pct",
+      "formula": "operating profit / turnover",
+      "flags": [
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "operating_profit",
+          "value": -1130729.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "turnover",
+          "value": 688317.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda",
+      "label": "EBITDA",
+      "period": "FY2024",
+      "value": -1130729.0,
+      "unit": "eur",
+      "formula": "operating profit + depreciation and amortisation",
+      "flags": [
+        "derived_non_gaap",
+        "depreciation_unavailable",
+        "loss_making"
+      ],
+      "note": "No depreciation is disclosed for this period, so EBITDA equals operating profit and is understated by the depreciation charge.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "operating_profit",
+          "value": -1130729.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda_margin",
+      "label": "EBITDA margin",
+      "period": "FY2024",
+      "value": -164.2744549386402,
+      "unit": "pct",
+      "formula": "EBITDA / turnover",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so the margin is shown as not meaningful. The absolute EBITDA figure and its trend are the informative measures while the company is pre-profit.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "operating_profit",
+          "value": -1130729.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "turnover",
+          "value": 688317.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "administrative_expenses_ratio",
+      "label": "Administrative costs as % of revenue",
+      "period": "FY2024",
+      "value": 226.76368591797092,
+      "unit": "pct",
+      "formula": "administrative expenses / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "administrative_expenses",
+          "value": -1560853.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "turnover",
+          "value": 688317.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "working_capital",
+      "label": "Working capital",
+      "period": "FY2024",
+      "value": 509291.0,
+      "unit": "eur",
+      "formula": "debtors + cash - creditors due within one year",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "debtors",
+          "value": 174730.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "cash_and_cash_equivalents",
+          "value": 424639.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "creditors_within_one_year",
+          "value": -90078.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "monthly_burn",
+      "label": "Net monthly cash burn",
+      "period": "FY2024",
+      "value": -100014.08333333333,
+      "unit": "eur",
+      "formula": "(cash flow from operations + cash flow from investing) / 12 months",
+      "flags": [],
+      "note": "Excludes financing, so it measures the cash the business consumes before any fundraising.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_operations",
+          "value": -1166697.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_investing",
+          "value": -33472.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cash_runway",
+      "label": "Cash runway",
+      "period": "FY2024",
+      "value": 4.245792050952824,
+      "unit": "months",
+      "formula": "closing cash / net monthly cash burn",
+      "flags": [
+        "warning"
+      ],
+      "note": "Assumes the burn rate of this period continues and no further capital is raised.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_and_cash_equivalents",
+          "value": 424639.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_operations",
+          "value": -1166697.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_investing",
+          "value": -33472.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "roce",
+      "label": "Return on capital employed",
+      "period": "FY2024",
+      "value": -196.75767947783206,
+      "unit": "pct",
+      "formula": "operating profit / (net assets + long-term creditors)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "ROCE is not meaningful for a loss-making company. Shown for completeness; the Board should read the absolute operating loss and its trend instead.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "operating_profit",
+          "value": -1130729.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "net_assets",
+          "value": 574681.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "creditors_after_one_year",
+          "value": 0.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "dscr",
+      "label": "Debt service coverage ratio",
+      "period": "FY2024",
+      "value": -23556.854166666668,
+      "unit": "x",
+      "formula": "EBITDA / (interest paid + principal repayments)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so there is no earnings coverage of debt service. Debt is currently serviced from cash reserves and equity funding, not from operations - which is the material point for a credit provider.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "operating_profit",
+          "value": -1130729.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "interest_payable",
+          "value": -48.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "HY2025",
+      "value": 340931.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "turnover",
+          "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "gross_margin",
+      "label": "Gross margin",
+      "period": "HY2025",
+      "value": 79.87862646693907,
+      "unit": "pct",
+      "formula": "gross profit / turnover",
+      "flags": [
+        "source_inconsistent"
+      ],
+      "note": "Source does not foot: turnover EUR 340,931 less cost of sales EUR 69,600 is EUR 271,331, but gross profit is printed as EUR 272,331. Margin uses the printed gross profit, which is what management's own published commentary is consistent with.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "gross_profit",
+          "value": 272331.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "turnover",
+          "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "operating_margin",
+      "label": "Operating margin",
+      "period": "HY2025",
+      "value": -118.96160806732155,
+      "unit": "pct",
+      "formula": "operating profit / turnover",
+      "flags": [
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "operating_profit",
+          "value": -405577.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "turnover",
+          "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda",
+      "label": "EBITDA",
+      "period": "HY2025",
+      "value": -395561.0,
+      "unit": "eur",
+      "formula": "operating profit + depreciation and amortisation",
+      "flags": [
+        "derived_non_gaap",
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "operating_profit",
+          "value": -405577.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "depreciation",
+          "value": 10016.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda_margin",
+      "label": "EBITDA margin",
+      "period": "HY2025",
+      "value": -116.02377020570145,
+      "unit": "pct",
+      "formula": "EBITDA / turnover",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so the margin is shown as not meaningful. The absolute EBITDA figure and its trend are the informative measures while the company is pre-profit.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "operating_profit",
+          "value": -405577.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "depreciation",
+          "value": 10016.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "turnover",
+          "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "administrative_expenses_ratio",
+      "label": "Administrative costs as % of revenue",
+      "period": "HY2025",
+      "value": 198.84023453426062,
+      "unit": "pct",
+      "formula": "administrative expenses / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "administrative_expenses",
+          "value": -677908.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "turnover",
+          "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "H2FY2025",
+      "value": 496060.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "gross_margin",
+      "label": "Gross margin",
+      "period": "H2FY2025",
+      "value": 75.8212716203685,
+      "unit": "pct",
+      "formula": "gross profit / turnover",
+      "flags": [
+        "source_inconsistent"
+      ],
+      "note": "Source does not foot: turnover EUR 496,060 less cost of sales EUR 118,941 is EUR 377,119, but gross profit is printed as EUR 376,119. Margin uses the printed gross profit, which is what management's own published commentary is consistent with.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "gross_profit",
+          "value": 376119.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "operating_margin",
+      "label": "Operating margin",
+      "period": "H2FY2025",
+      "value": -45.98576785066323,
+      "unit": "pct",
+      "formula": "operating profit / turnover",
+      "flags": [
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "operating_profit",
+          "value": -228117.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda",
+      "label": "EBITDA",
+      "period": "H2FY2025",
+      "value": -228117.0,
+      "unit": "eur",
+      "formula": "operating profit + depreciation and amortisation",
+      "flags": [
+        "derived_non_gaap",
+        "depreciation_unavailable",
+        "loss_making"
+      ],
+      "note": "No depreciation is disclosed for this period, so EBITDA equals operating profit and is understated by the depreciation charge.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "operating_profit",
+          "value": -228117.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda_margin",
+      "label": "EBITDA margin",
+      "period": "H2FY2025",
+      "value": -45.98576785066323,
+      "unit": "pct",
+      "formula": "EBITDA / turnover",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so the margin is shown as not meaningful. The absolute EBITDA figure and its trend are the informative measures while the company is pre-profit.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "operating_profit",
+          "value": -228117.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "administrative_expenses_ratio",
+      "label": "Administrative costs as % of revenue",
+      "period": "H2FY2025",
+      "value": 122.59605692859733,
+      "unit": "pct",
+      "formula": "administrative expenses / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "administrative_expenses",
+          "value": -608150.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "working_capital",
+      "label": "Working capital",
+      "period": "H2FY2025",
+      "value": 19292.0,
+      "unit": "eur",
+      "formula": "debtors + cash - creditors due within one year",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "debtors",
+          "value": 123003.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "cash_and_cash_equivalents",
+          "value": 140135.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "creditors_within_one_year",
+          "value": -243846.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "roce",
+      "label": "Return on capital employed",
+      "period": "H2FY2025",
+      "value": -335.0719741480611,
+      "unit": "pct",
+      "formula": "operating profit / (net assets + long-term creditors)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "ROCE is not meaningful for a loss-making company. Shown for completeness; the Board should read the absolute operating loss and its trend instead.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "operating_profit",
+          "value": -228117.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "net_assets",
+          "value": -15575.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "creditors_after_one_year",
+          "value": -83655.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "dscr",
+      "label": "Debt service coverage ratio",
+      "period": "H2FY2025",
+      "value": -109.98891031822565,
+      "unit": "x",
+      "formula": "EBITDA / (interest paid + principal repayments)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so there is no earnings coverage of debt service. Debt is currently serviced from cash reserves and equity funding, not from operations - which is the material point for a credit provider.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "operating_profit",
+          "value": -228117.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "interest_payable",
+          "value": -2074.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "FY2025",
+      "value": 836991.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_growth_yoy",
+      "label": "Revenue growth (YoY)",
+      "period": "FY2025",
+      "value": 21.59964086314881,
+      "unit": "pct",
+      "formula": "(FY2025 turnover - FY2024 turnover) / FY2024 turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2024",
+          "metric": "turnover",
+          "value": 688317.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "gross_margin",
+      "label": "Gross margin",
+      "period": "FY2025",
+      "value": 77.47395133281003,
+      "unit": "pct",
+      "formula": "gross profit / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "gross_profit",
+          "value": 648450.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "operating_margin",
+      "label": "Operating margin",
+      "period": "FY2025",
+      "value": -75.71096941305223,
+      "unit": "pct",
+      "formula": "operating profit / turnover",
+      "flags": [
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "operating_profit",
+          "value": -633694.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda",
+      "label": "EBITDA",
+      "period": "FY2025",
+      "value": -633694.0,
+      "unit": "eur",
+      "formula": "operating profit + depreciation and amortisation",
+      "flags": [
+        "derived_non_gaap",
+        "depreciation_unavailable",
+        "loss_making"
+      ],
+      "note": "No depreciation is disclosed for this period, so EBITDA equals operating profit and is understated by the depreciation charge.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "operating_profit",
+          "value": -633694.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda_margin",
+      "label": "EBITDA margin",
+      "period": "FY2025",
+      "value": -75.71096941305223,
+      "unit": "pct",
+      "formula": "EBITDA / turnover",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so the margin is shown as not meaningful. The absolute EBITDA figure and its trend are the informative measures while the company is pre-profit.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "operating_profit",
+          "value": -633694.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "administrative_expenses_ratio",
+      "label": "Administrative costs as % of revenue",
+      "period": "FY2025",
+      "value": 153.65254823528568,
+      "unit": "pct",
+      "formula": "administrative expenses / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "administrative_expenses",
+          "value": -1286058.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "working_capital",
+      "label": "Working capital",
+      "period": "FY2025",
+      "value": 19292.0,
+      "unit": "eur",
+      "formula": "debtors + cash - creditors due within one year",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "debtors",
+          "value": 123003.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "cash_and_cash_equivalents",
+          "value": 140135.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "creditors_within_one_year",
+          "value": -243846.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "monthly_burn",
+      "label": "Net monthly cash burn",
+      "period": "FY2025",
+      "value": -31522.583333333332,
+      "unit": "eur",
+      "formula": "(cash flow from operations + cash flow from investing) / 12 months",
+      "flags": [],
+      "note": "Excludes financing, so it measures the cash the business consumes before any fundraising.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_operations",
+          "value": -374820.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_investing",
+          "value": -3451.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cash_runway",
+      "label": "Cash runway",
+      "period": "FY2025",
+      "value": 4.445543010169958,
+      "unit": "months",
+      "formula": "closing cash / net monthly cash burn",
+      "flags": [
+        "warning"
+      ],
+      "note": "Assumes the burn rate of this period continues and no further capital is raised.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_and_cash_equivalents",
+          "value": 140135.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_operations",
+          "value": -374820.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_investing",
+          "value": -3451.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "roce",
+      "label": "Return on capital employed",
+      "period": "FY2025",
+      "value": -930.8078730904817,
+      "unit": "pct",
+      "formula": "operating profit / (net assets + long-term creditors)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "ROCE is not meaningful for a loss-making company. Shown for completeness; the Board should read the absolute operating loss and its trend instead.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "operating_profit",
+          "value": -633694.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "net_assets",
+          "value": -15575.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "creditors_after_one_year",
+          "value": -83655.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "dscr",
+      "label": "Debt service coverage ratio",
+      "period": "FY2025",
+      "value": -305.54194792671166,
+      "unit": "x",
+      "formula": "EBITDA / (interest paid + principal repayments)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so there is no earnings coverage of debt service. Debt is currently serviced from cash reserves and equity funding, not from operations - which is the material point for a credit provider.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "operating_profit",
+          "value": -633694.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "interest_payable",
+          "value": -2074.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "HY2026",
+      "value": 354813.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "turnover",
+          "value": 354813.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_growth_yoy",
+      "label": "Revenue growth (YoY)",
+      "period": "HY2026",
+      "value": 4.071791652856443,
+      "unit": "pct",
+      "formula": "(HY2026 turnover - HY2025 turnover) / HY2025 turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "turnover",
+          "value": 354813.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2025",
+          "metric": "turnover",
+          "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "gross_margin",
+      "label": "Gross margin",
+      "period": "HY2026",
+      "value": 81.7196664158303,
+      "unit": "pct",
+      "formula": "gross profit / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "gross_profit",
+          "value": 289952.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "turnover",
+          "value": 354813.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "operating_margin",
+      "label": "Operating margin",
+      "period": "HY2026",
+      "value": -136.34026938133607,
+      "unit": "pct",
+      "formula": "operating profit / turnover",
+      "flags": [
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "operating_profit",
+          "value": -483753.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "turnover",
+          "value": 354813.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda",
+      "label": "EBITDA",
+      "period": "HY2026",
+      "value": -473739.0,
+      "unit": "eur",
+      "formula": "operating profit + depreciation and amortisation",
+      "flags": [
+        "derived_non_gaap",
+        "loss_making"
+      ],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "operating_profit",
+          "value": -483753.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "depreciation",
+          "value": 10014.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "ebitda_margin",
+      "label": "EBITDA margin",
+      "period": "HY2026",
+      "value": -133.51793761784376,
+      "unit": "pct",
+      "formula": "EBITDA / turnover",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "EBITDA is negative, so the margin is shown as not meaningful. The absolute EBITDA figure and its trend are the informative measures while the company is pre-profit.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "operating_profit",
+          "value": -483753.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "depreciation",
+          "value": 10014.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "turnover",
+          "value": 354813.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "administrative_expenses_ratio",
+      "label": "Administrative costs as % of revenue",
+      "period": "HY2026",
+      "value": 220.39074103823702,
+      "unit": "pct",
+      "formula": "administrative expenses / turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "administrative_expenses",
+          "value": -781975.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "turnover",
+          "value": 354813.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "working_capital",
+      "label": "Working capital",
+      "period": "HY2026",
+      "value": 536233.0,
+      "unit": "eur",
+      "formula": "debtors + cash - creditors due within one year",
+      "flags": [
+        "excludes_contingent_consideration"
+      ],
+      "note": "Excludes the EUR 850,000 Loamin contingent consideration, which is performance-linked and payable only if targets are met. Including it would take working capital to negative EUR 313,767.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "debtors",
+          "value": 188149.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 735189.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "creditors_within_one_year",
+          "value": -387105.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "contingent_consideration",
+          "value": -850000.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "monthly_burn",
+      "label": "Net monthly cash burn",
+      "period": "HY2026",
+      "value": -69798.5,
+      "unit": "eur",
+      "formula": "(cash flow from operations + cash flow from investing) / 6 months",
+      "flags": [],
+      "note": "Excludes financing, so it measures the cash the business consumes before any fundraising.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_operations",
+          "value": -410291.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_investing",
+          "value": -8500.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 7,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cash_runway",
+      "label": "Cash runway",
+      "period": "HY2026",
+      "value": 10.533020050574153,
+      "unit": "months",
+      "formula": "closing cash / net monthly cash burn",
+      "flags": [],
+      "note": "Assumes the burn rate of this period continues and no further capital is raised.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 735189.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_operations",
+          "value": -410291.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_investing",
+          "value": -8500.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 7,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "roce",
+      "label": "Return on capital employed",
+      "period": "HY2026",
+      "value": -75.87627734077844,
+      "unit": "pct",
+      "formula": "operating profit / (net assets + long-term creditors)",
+      "flags": [
+        "not_meaningful",
+        "loss_making"
+      ],
+      "note": "ROCE is not meaningful for a loss-making company. Shown for completeness; the Board should read the absolute operating loss and its trend instead.",
+      "not_meaningful": true,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "operating_profit",
+          "value": -483753.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "net_assets",
+          "value": 561081.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        },
+        {
+          "period": "HY2026",
+          "metric": "creditors_after_one_year",
+          "value": -76474.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "H2FY2026",
+      "value": 645187.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2026",
+          "metric": "turnover",
+          "value": 645187.0,
+          "source": "derived: FY2026 less HY2026",
+          "page": "Senus_PR_AGMStatement_V08072026.pdf p1; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": true
+        }
+      ]
+    },
+    {
+      "id": "revenue_growth_yoy",
+      "label": "Revenue growth (YoY)",
+      "period": "H2FY2026",
+      "value": 30.062290851913076,
+      "unit": "pct",
+      "formula": "(H2FY2026 turnover - H2FY2025 turnover) / H2FY2025 turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2026",
+          "metric": "turnover",
+          "value": 645187.0,
+          "source": "derived: FY2026 less HY2026",
+          "page": "Senus_PR_AGMStatement_V08072026.pdf p1; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": true
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "monthly_burn",
+      "label": "Net monthly cash burn",
+      "period": "H2FY2026",
+      "value": -100864.83333333333,
+      "unit": "eur",
+      "formula": "(closing cash - opening cash) / 6 months",
+      "flags": [
+        "derived_from_cash_movement"
+      ],
+      "note": "No cash flow statement is published for this period, so the burn is derived from the movement in the cash balance. This includes any financing in the period; no equity raise was announced between 31 December 2025 and the year end, so it is a fair proxy for operating burn.",
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 130000.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        },
+        {
+          "period": "HY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 735189.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cash_runway",
+      "label": "Cash runway",
+      "period": "H2FY2026",
+      "value": 1.2888535647541512,
+      "unit": "months",
+      "formula": "closing cash / net monthly cash burn",
+      "flags": [
+        "critical"
+      ],
+      "note": "Assumes the burn rate of this period continues and no further capital is raised.",
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 130000.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        },
+        {
+          "period": "H2FY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 130000.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        },
+        {
+          "period": "HY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 735189.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "period": "FY2026",
+      "value": 1000000.0,
+      "unit": "eur",
+      "formula": "turnover as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "FY2026",
+          "metric": "turnover",
+          "value": 1000000.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        }
+      ]
+    },
+    {
+      "id": "revenue_growth_yoy",
+      "label": "Revenue growth (YoY)",
+      "period": "FY2026",
+      "value": 19.475597706546427,
+      "unit": "pct",
+      "formula": "(FY2026 turnover - FY2025 turnover) / FY2025 turnover",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "FY2026",
+          "metric": "turnover",
+          "value": 1000000.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        },
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    }
+  ],
+  "source_defects": [
+    {
+      "id": "D01",
+      "severity": "medium",
+      "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": 5,
+      "period": "HY2025",
+      "description": "The HY2025 comparative column of the consolidated profit and loss account does not articulate. Turnover 340,931 less cost of sales 69,600 equals 271,331, but gross profit is printed as 272,331 - a 1,000 euro difference.",
+      "corroboration": "Management's own narrative on page 1 and page 3 (gross profit up 6.5%, HY2025 gross margin 79.8%) is consistent with the printed gross profit of 272,331 and NOT with the arithmetic result of 271,331. 272,331/340,931 = 79.88%. 271,331/340,931 = 79.59%. The 6.5% growth figure also only holds against 272,331.",
+      "conclusion": "The gross profit and turnover figures are reliable; the cost of sales figure is the likely typo (68,600 would make the column foot exactly). The current period column for HY2026 foots correctly, so this is isolated to the comparative.",
+      "handling": "Record both figures exactly as printed. Do NOT silently correct. Surface as a data quality flag against the HY2025 cost of sales line, and prefer the printed gross profit when computing margin so that the platform agrees with management's published commentary.",
+      "why_this_matters": "This is a real footing error in a published interim statement, caught by an automated reconciliation check rather than by eye. It is the clearest demonstration that the pipeline validates rather than merely transcribes."
+    },
+    {
+      "id": "D02",
+      "severity": "low",
+      "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": "5 and 8",
+      "period": "HY2026",
+      "description": "Goodwill on the Loamin acquisition is stated as 669,550 on the consolidated balance sheet and 669,500 in note 4.",
+      "handling": "Prefer the balance sheet figure, since it is the one that makes net assets of 561,081 articulate. Flag the note as inconsistent."
+    },
+    {
+      "id": "D03",
+      "severity": "informational",
+      "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+      "page": "5 to 7",
+      "period": "HY2026",
+      "description": "Several statements are internally consistent only to the nearest euro (operating loss 483,753 against a computed 483,754; closing cash 735,189 against a computed 735,190).",
+      "handling": "Reconciliation tolerance of 1 euro. Differences of 1 euro are rounding, not errors, and must not be flagged to the board."
+    }
+  ],
+  "data_gaps": [
+    "No monthly data exists in any source document. Any month-on-month view must be modelled and explicitly labelled as modelled in the UI.",
+    "FY2026 has no published statements - full year results are scheduled for 11 September 2026. All FY2026 figures are directors' indications from the AGM Statement and are approximate.",
+    "FY2023 has only a closing cash balance (1,628,654), derived from the FY2024 opening balance. No FY2023 profit and loss or balance sheet is available.",
+    "No EBITDA is disclosed in any source. It must be derived as operating profit plus depreciation and amortisation, and labelled as a derived non-GAAP measure.",
+    "Depreciation is disclosed for HY2025 and HY2026 only. FY2024 and FY2025 depreciation must be sourced from the fixed asset note in the scanned ADF statements.",
+    "The FY2026 revenue split by channel and geography is given as approximate percentages only, not absolute euro amounts."
+  ],
+  "strategy": {
+    "name": "Senus 2030",
+    "revenue_cagr_target_pct": 50.0,
+    "baseline_period": "FY2025",
+    "baseline_revenue": 836991,
+    "target_period": "FY2030",
+    "ebitda_positive_target": "FY2028",
+    "enterprise_customers_target": 100,
+    "acv_target": 50000,
+    "ireland_revenue_share_target_pct": 50.0,
+    "source": "Senus-PLC-Information-Document-December-2025.pdf p26-27"
+  }
+}
