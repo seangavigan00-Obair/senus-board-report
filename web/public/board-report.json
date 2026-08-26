@@ -1,11 +1,11 @@
 {
   "build": {
-    "generated_at": "2026-08-26T17:45:17+00:00",
+    "generated_at": "2026-08-26T17:57:16+00:00",
     "fact_source": "golden_set",
     "fact_source_file": "golden_set.json",
-    "metric_count": 55,
+    "metric_count": 100,
     "period_count": 8,
-    "content_hash": "1507f188c7a7bcbe"
+    "content_hash": "32414440ae1a5ac9"
   },
   "entity": {
     "current_name": "Senus PLC",
@@ -542,6 +542,182 @@
       ]
     },
     {
+      "id": "cost_component_cost_of_sales",
+      "label": "Cost of sales",
+      "period": "FY2024",
+      "value": 255840.0,
+      "unit": "eur",
+      "formula": "cost of sales as reported",
+      "flags": [],
+      "note": "14.1% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cost_of_sales",
+          "value": -255840.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_distribution_costs",
+      "label": "Distribution costs",
+      "period": "FY2024",
+      "value": 2353.0,
+      "unit": "eur",
+      "formula": "distribution costs as reported",
+      "flags": [],
+      "note": "0.1% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "distribution_costs",
+          "value": -2353.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_administrative_expenses",
+      "label": "Administrative expenses",
+      "period": "FY2024",
+      "value": 1560853.0,
+      "unit": "eur",
+      "formula": "administrative expenses as reported",
+      "flags": [],
+      "note": "85.8% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "administrative_expenses",
+          "value": -1560853.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_opening_cash",
+      "label": "Opening cash",
+      "period": "FY2024",
+      "value": 1628654.0,
+      "unit": "eur",
+      "formula": "closing cash at FY2023",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2023",
+          "metric": "cash_and_cash_equivalents",
+          "value": 1628654.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_operations",
+      "label": "Operating",
+      "period": "FY2024",
+      "value": -1166697.0,
+      "unit": "eur",
+      "formula": "operating cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_operations",
+          "value": -1166697.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_investing",
+      "label": "Investing",
+      "period": "FY2024",
+      "value": -33472.0,
+      "unit": "eur",
+      "formula": "investing cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_investing",
+          "value": -33472.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_financing",
+      "label": "Financing",
+      "period": "FY2024",
+      "value": -3846.0,
+      "unit": "eur",
+      "formula": "financing cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_flow_from_financing",
+          "value": -3846.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_closing_cash",
+      "label": "Closing cash",
+      "period": "FY2024",
+      "value": 424639.0,
+      "unit": "eur",
+      "formula": "closing cash as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_and_cash_equivalents",
+          "value": 424639.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
       "id": "revenue",
       "label": "Revenue",
       "period": "HY2025",
@@ -725,6 +901,50 @@
           "period": "HY2025",
           "metric": "turnover",
           "value": 340931.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_cost_of_sales",
+      "label": "Cost of sales",
+      "period": "HY2025",
+      "value": 69600.0,
+      "unit": "eur",
+      "formula": "cost of sales as reported",
+      "flags": [],
+      "note": "9.3% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "cost_of_sales",
+          "value": -69600.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_administrative_expenses",
+      "label": "Administrative expenses",
+      "period": "HY2025",
+      "value": 677908.0,
+      "unit": "eur",
+      "formula": "administrative expenses as reported",
+      "flags": [],
+      "note": "90.7% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2025",
+          "metric": "administrative_expenses",
+          "value": -677908.0,
           "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
           "page": 5,
           "is_approximate": false
@@ -1014,6 +1234,212 @@
           "value": -2074.0,
           "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
           "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "customer_accounts",
+      "label": "Customer accounts",
+      "period": "H2FY2025",
+      "value": 138.0,
+      "unit": "count",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "customer_accounts",
+          "value": 138.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 9,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "enterprise_customers",
+      "label": "Enterprise customers",
+      "period": "H2FY2025",
+      "value": 36.0,
+      "unit": "count",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "enterprise_customers",
+          "value": 36.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_per_account",
+      "label": "Revenue per customer account",
+      "period": "H2FY2025",
+      "value": 3594.6376811594205,
+      "unit": "eur",
+      "formula": "turnover / customer accounts",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "turnover",
+          "value": 496060.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        },
+        {
+          "period": "H2FY2025",
+          "metric": "customer_accounts",
+          "value": 138.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 9,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "acv_enterprise_era",
+      "label": "ACV \u2014 Senus ERA",
+      "period": "H2FY2025",
+      "value": 58900.0,
+      "unit": "eur",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "acv_enterprise_era",
+          "value": 58900.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "acv_enterprise_terrain",
+      "label": "ACV \u2014 Terrain",
+      "period": "H2FY2025",
+      "value": 21524.0,
+      "unit": "eur",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "acv_enterprise_terrain",
+          "value": 21524.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "acv_enterprise_soil",
+      "label": "ACV \u2014 Soil",
+      "period": "H2FY2025",
+      "value": 12309.0,
+      "unit": "eur",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "acv_enterprise_soil",
+          "value": 12309.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_share_ireland_pct",
+      "label": "Ireland share of revenue",
+      "period": "H2FY2025",
+      "value": 78.0,
+      "unit": "pct",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "revenue_share_ireland_pct",
+          "value": 78.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": true
+        }
+      ]
+    },
+    {
+      "id": "cost_component_cost_of_sales",
+      "label": "Cost of sales",
+      "period": "H2FY2025",
+      "value": 118941.0,
+      "unit": "eur",
+      "formula": "cost of sales as reported",
+      "flags": [],
+      "note": "16.4% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "cost_of_sales",
+          "value": -118941.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_administrative_expenses",
+      "label": "Administrative expenses",
+      "period": "H2FY2025",
+      "value": 608150.0,
+      "unit": "eur",
+      "formula": "administrative expenses as reported",
+      "flags": [],
+      "note": "83.6% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "H2FY2025",
+          "metric": "administrative_expenses",
+          "value": -608150.0,
+          "source": "derived: FY2025 less HY2025",
+          "page": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf p10; Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf p5",
           "is_approximate": false
         }
       ]
@@ -1404,6 +1830,344 @@
       ]
     },
     {
+      "id": "customer_accounts",
+      "label": "Customer accounts",
+      "period": "FY2025",
+      "value": 138.0,
+      "unit": "count",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "customer_accounts",
+          "value": 138.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 9,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "enterprise_customers",
+      "label": "Enterprise customers",
+      "period": "FY2025",
+      "value": 36.0,
+      "unit": "count",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "enterprise_customers",
+          "value": 36.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_per_account",
+      "label": "Revenue per customer account",
+      "period": "FY2025",
+      "value": 6065.152173913043,
+      "unit": "eur",
+      "formula": "turnover / customer accounts",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "turnover",
+          "value": 836991.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        },
+        {
+          "period": "FY2025",
+          "metric": "customer_accounts",
+          "value": 138.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 9,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "acv_enterprise_era",
+      "label": "ACV \u2014 Senus ERA",
+      "period": "FY2025",
+      "value": 58900.0,
+      "unit": "eur",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "acv_enterprise_era",
+          "value": 58900.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "acv_enterprise_terrain",
+      "label": "ACV \u2014 Terrain",
+      "period": "FY2025",
+      "value": 21524.0,
+      "unit": "eur",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "acv_enterprise_terrain",
+          "value": 21524.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "acv_enterprise_soil",
+      "label": "ACV \u2014 Soil",
+      "period": "FY2025",
+      "value": 12309.0,
+      "unit": "eur",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "acv_enterprise_soil",
+          "value": 12309.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_share_ireland_pct",
+      "label": "Ireland share of revenue",
+      "period": "FY2025",
+      "value": 78.0,
+      "unit": "pct",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "revenue_share_ireland_pct",
+          "value": 78.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 27,
+          "is_approximate": true
+        }
+      ]
+    },
+    {
+      "id": "cost_component_cost_of_sales",
+      "label": "Cost of sales",
+      "period": "FY2025",
+      "value": 188541.0,
+      "unit": "eur",
+      "formula": "cost of sales as reported",
+      "flags": [],
+      "note": "12.8% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cost_of_sales",
+          "value": -188541.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_distribution_costs",
+      "label": "Distribution costs",
+      "period": "FY2025",
+      "value": 1084.0,
+      "unit": "eur",
+      "formula": "distribution costs as reported",
+      "flags": [],
+      "note": "0.1% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "distribution_costs",
+          "value": -1084.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_administrative_expenses",
+      "label": "Administrative expenses",
+      "period": "FY2025",
+      "value": 1286058.0,
+      "unit": "eur",
+      "formula": "administrative expenses as reported",
+      "flags": [],
+      "note": "87.2% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "administrative_expenses",
+          "value": -1286058.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 10,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_opening_cash",
+      "label": "Opening cash",
+      "period": "FY2025",
+      "value": 424639.0,
+      "unit": "eur",
+      "formula": "closing cash at FY2024",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2024",
+          "metric": "cash_and_cash_equivalents",
+          "value": 424639.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_operations",
+      "label": "Operating",
+      "period": "FY2025",
+      "value": -374820.0,
+      "unit": "eur",
+      "formula": "operating cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_operations",
+          "value": -374820.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_investing",
+      "label": "Investing",
+      "period": "FY2025",
+      "value": -3451.0,
+      "unit": "eur",
+      "formula": "investing cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_investing",
+          "value": -3451.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_financing",
+      "label": "Financing",
+      "period": "FY2025",
+      "value": 93767.0,
+      "unit": "eur",
+      "formula": "financing cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_flow_from_financing",
+          "value": 93767.0,
+          "source": "Senus-PLC-Information-Document-December-2025.pdf",
+          "page": 26,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_closing_cash",
+      "label": "Closing cash",
+      "period": "FY2025",
+      "value": 140135.0,
+      "unit": "eur",
+      "formula": "closing cash as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_and_cash_equivalents",
+          "value": 140135.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
       "id": "revenue",
       "label": "Revenue",
       "period": "HY2026",
@@ -1779,6 +2543,160 @@
       ]
     },
     {
+      "id": "cost_component_cost_of_sales",
+      "label": "Cost of sales",
+      "period": "HY2026",
+      "value": 64861.0,
+      "unit": "eur",
+      "formula": "cost of sales as reported",
+      "flags": [],
+      "note": "7.7% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cost_of_sales",
+          "value": -64861.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "cost_component_administrative_expenses",
+      "label": "Administrative expenses",
+      "period": "HY2026",
+      "value": 781975.0,
+      "unit": "eur",
+      "formula": "administrative expenses as reported",
+      "flags": [],
+      "note": "92.3% of the total cost base.",
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "administrative_expenses",
+          "value": -781975.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_opening_cash",
+      "label": "Opening cash",
+      "period": "HY2026",
+      "value": 140135.0,
+      "unit": "eur",
+      "formula": "closing cash at FY2025",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "FY2025",
+          "metric": "cash_and_cash_equivalents",
+          "value": 140135.0,
+          "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
+          "page": 11,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_operations",
+      "label": "Operating",
+      "period": "HY2026",
+      "value": -410291.0,
+      "unit": "eur",
+      "formula": "operating cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_operations",
+          "value": -410291.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 6,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_investing",
+      "label": "Investing",
+      "period": "HY2026",
+      "value": -8500.0,
+      "unit": "eur",
+      "formula": "investing cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_investing",
+          "value": -8500.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 7,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_cash_flow_from_financing",
+      "label": "Financing",
+      "period": "HY2026",
+      "value": 1013846.0,
+      "unit": "eur",
+      "formula": "financing cash flow as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cash_flow_from_financing",
+          "value": 1013846.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 7,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "bridge_closing_cash",
+      "label": "Closing cash",
+      "period": "HY2026",
+      "value": 735189.0,
+      "unit": "eur",
+      "formula": "closing cash as reported",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": false,
+      "inputs": [
+        {
+          "period": "HY2026",
+          "metric": "cash_and_cash_equivalents",
+          "value": 735189.0,
+          "source": "Senus_HalfYearResultsDec2025_PR_V19032026-FINAL-clean.pdf",
+          "page": 5,
+          "is_approximate": false
+        }
+      ]
+    },
+    {
       "id": "revenue",
       "label": "Revenue",
       "period": "H2FY2026",
@@ -1903,6 +2821,50 @@
       ]
     },
     {
+      "id": "revenue_share_enterprise_pct",
+      "label": "Enterprise share of revenue",
+      "period": "H2FY2026",
+      "value": 60.0,
+      "unit": "pct",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2026",
+          "metric": "revenue_share_enterprise_pct",
+          "value": 60.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        }
+      ]
+    },
+    {
+      "id": "revenue_share_uk_pct",
+      "label": "UK share of revenue",
+      "period": "H2FY2026",
+      "value": 20.0,
+      "unit": "pct",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "H2FY2026",
+          "metric": "revenue_share_uk_pct",
+          "value": 20.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        }
+      ]
+    },
+    {
       "id": "revenue",
       "label": "Revenue",
       "period": "FY2026",
@@ -1951,6 +2913,50 @@
           "source": "ADF-Farm-Solutions-Consolidated-Financial-Statements-30-June-2025.pdf",
           "page": 10,
           "is_approximate": false
+        }
+      ]
+    },
+    {
+      "id": "revenue_share_enterprise_pct",
+      "label": "Enterprise share of revenue",
+      "period": "FY2026",
+      "value": 60.0,
+      "unit": "pct",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "FY2026",
+          "metric": "revenue_share_enterprise_pct",
+          "value": 60.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
+        }
+      ]
+    },
+    {
+      "id": "revenue_share_uk_pct",
+      "label": "UK share of revenue",
+      "period": "FY2026",
+      "value": 20.0,
+      "unit": "pct",
+      "formula": "as disclosed",
+      "flags": [],
+      "note": null,
+      "not_meaningful": false,
+      "is_approximate": true,
+      "inputs": [
+        {
+          "period": "FY2026",
+          "metric": "revenue_share_uk_pct",
+          "value": 20.0,
+          "source": "Senus_PR_AGMStatement_V08072026.pdf",
+          "page": 1,
+          "is_approximate": true
         }
       ]
     }

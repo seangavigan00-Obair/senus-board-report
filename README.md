@@ -296,7 +296,10 @@ trusted anywhere near it.
 ## Current status and known gaps
 
 **Working:** classification, dual-path extraction, precedence, reconciliation,
-metrics engine, board report UI with provenance drill-down, JSON API.
+metrics engine (100 values across 8 periods), board report application with
+sidebar navigation, audience toggle, revenue and margin charts, a cash-walk
+waterfall, cost-base composition, a full period comparison table, and
+click-through provenance on every figure. JSON API at `/api/report`.
 
 **Not yet done, and honestly:**
 

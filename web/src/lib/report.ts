@@ -12,13 +12,24 @@ import type { BoardReport, Metric } from "./types";
  * in January that were approved in September.
  */
 
-let cached: BoardReport | null = null;
+/**
+ * Cached on the file's modification time rather than unconditionally.
+ *
+ * An unconditional cache means a long-running server keeps serving the payload
+ * it read at boot: rebuild the report and the site silently shows yesterday's
+ * numbers, with no error to notice. Keying on mtime costs one stat() per
+ * request and makes a rebuild take effect without a restart.
+ */
+let cached: { mtimeMs: number; report: BoardReport } | null = null;
 
 export async function loadReport(): Promise<BoardReport> {
-  if (cached) return cached;
   const file = path.join(process.cwd(), "public", "board-report.json");
-  cached = JSON.parse(await fs.readFile(file, "utf-8")) as BoardReport;
-  return cached;
+  const { mtimeMs } = await fs.stat(file);
+  if (cached?.mtimeMs === mtimeMs) return cached.report;
+
+  const report = JSON.parse(await fs.readFile(file, "utf-8")) as BoardReport;
+  cached = { mtimeMs, report };
+  return report;
 }
 
 /** Index metrics by id then period for O(1) lookup in the render path. */

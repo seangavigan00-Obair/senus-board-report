@@ -456,6 +456,98 @@ def cost_ratio(metric: str, label: str) -> Callable[[FactStore, str], MetricResu
     return compute
 
 
+def passthrough(
+    metric: str, label: str, unit: Unit = "count",
+) -> Callable[[FactStore, str], MetricResult | None]:
+    """Surface a disclosed KPI as a metric without transforming it."""
+    def compute(store: FactStore, period: str) -> MetricResult | None:
+        ref = store.get(period, metric)
+        if ref is None:
+            return None
+        return MetricResult(metric, label, period, ref.value, unit,
+                            "as disclosed", [ref])
+    return compute
+
+
+def revenue_per_account(store: FactStore, period: str) -> MetricResult | None:
+    refs = _need(store, period, "turnover", "customer_accounts")
+    if not refs:
+        return None
+    revenue_value, accounts = refs[0].value, refs[1].value
+    if accounts == 0:
+        return None
+    return MetricResult("revenue_per_account", "Revenue per customer account",
+                        period, revenue_value / accounts, "eur",
+                        "turnover / customer accounts", refs)
+
+
+def cost_breakdown(store: FactStore, period: str) -> list[MetricResult]:
+    """
+    The cost base, as components. The brief asks for a cost breakdown, and the
+    interesting fact is the shape: administrative expenses are 87% of the cost
+    base, so this is a people-and-overhead business, not a cost-of-delivery one.
+    """
+    components = [
+        ("cost_of_sales", "Cost of sales"),
+        ("distribution_costs", "Distribution costs"),
+        ("administrative_expenses", "Administrative expenses"),
+    ]
+    present = [(m, label, store.get(period, m)) for m, label in components]
+    present = [(m, label, ref) for m, label, ref in present if ref is not None]
+    if not present:
+        return []
+
+    total = sum(abs(ref.value) for _, _, ref in present)
+    out: list[MetricResult] = []
+    for metric, label, ref in present:
+        result = MetricResult(f"cost_component_{metric}", label, period,
+                              abs(ref.value), "eur",
+                              f"{label.lower()} as reported", [ref])
+        if total:
+            result.note = f"{abs(ref.value) / total * 100:.1f}% of the total cost base."
+        out.append(result)
+    return out
+
+
+def cash_bridge(store: FactStore, period: str) -> list[MetricResult]:
+    """
+    The movement from opening to closing cash, as a walk.
+
+    This is the EBITDA-to-cash bridge the brief asks for, expressed in the terms
+    the source documents actually support: opening cash, operating flow,
+    investing flow, financing flow, closing cash. Presenting it as a walk is what
+    makes the December equity raise visible as the thing that funded the period.
+    """
+    opening_period = OPENING_CASH_FROM.get(period)
+    if not opening_period:
+        return []
+    opening = store.get(opening_period, "cash_and_cash_equivalents")
+    closing = store.get(period, "cash_and_cash_equivalents")
+    if opening is None or closing is None:
+        return []
+
+    steps: list[MetricResult] = [
+        MetricResult("bridge_opening_cash", "Opening cash", period,
+                     opening.value, "eur",
+                     f"closing cash at {opening_period}", [opening])
+    ]
+    for metric, label in (("cash_flow_from_operations", "Operating"),
+                          ("cash_flow_from_investing", "Investing"),
+                          ("cash_flow_from_financing", "Financing")):
+        ref = store.get(period, metric)
+        if ref is not None:
+            steps.append(MetricResult(f"bridge_{metric}", label, period,
+                                      ref.value, "eur",
+                                      f"{label.lower()} cash flow as reported", [ref]))
+    steps.append(MetricResult("bridge_closing_cash", "Closing cash", period,
+                              closing.value, "eur", "closing cash as reported",
+                              [closing]))
+
+    # Only a complete walk is worth showing; a bridge missing its middle is
+    # misleading rather than incomplete.
+    return steps if len(steps) == 5 else []
+
+
 REGISTRY: dict[str, Callable[[FactStore, str], MetricResult | None]] = {
     "revenue": revenue,
     "revenue_growth_yoy": revenue_growth_yoy,
@@ -470,7 +562,21 @@ REGISTRY: dict[str, Callable[[FactStore, str], MetricResult | None]] = {
     "cash_runway": cash_runway,
     "roce": roce,
     "dscr": debt_service_coverage,
+    "customer_accounts": passthrough("customer_accounts", "Customer accounts"),
+    "enterprise_customers": passthrough("enterprise_customers", "Enterprise customers"),
+    "revenue_per_account": revenue_per_account,
+    "acv_enterprise_era": passthrough("acv_enterprise_era", "ACV — Senus ERA", "eur"),
+    "acv_enterprise_terrain": passthrough("acv_enterprise_terrain", "ACV — Terrain", "eur"),
+    "acv_enterprise_soil": passthrough("acv_enterprise_soil", "ACV — Soil", "eur"),
+    "revenue_share_enterprise_pct": passthrough(
+        "revenue_share_enterprise_pct", "Enterprise share of revenue", "pct"),
+    "revenue_share_uk_pct": passthrough("revenue_share_uk_pct", "UK share of revenue", "pct"),
+    "revenue_share_ireland_pct": passthrough(
+        "revenue_share_ireland_pct", "Ireland share of revenue", "pct"),
 }
+
+# Metric families that return several results per period rather than one.
+MULTI: list[Callable[[FactStore, str], list[MetricResult]]] = [cost_breakdown, cash_bridge]
 
 
 def compute_all(store: FactStore) -> list[MetricResult]:
@@ -480,6 +586,8 @@ def compute_all(store: FactStore) -> list[MetricResult]:
             result = compute(store, period)
             if result is not None:
                 out.append(result)
+        for compute_many in MULTI:
+            out.extend(compute_many(store, period))
     return out
 
 
