@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { Metric } from "@/lib/types";
 import { display, formatExact } from "@/lib/format";
 
@@ -12,6 +12,21 @@ import { display, formatExact } from "@/lib/format";
  * fact was read from - so a director can check a number rather than trust it.
  * A board report where the figures cannot be traced is a slide deck.
  */
+interface DbFact {
+  period_id: string;
+  metric: string;
+  value: string;
+  value_as_printed: string | null;
+  label_as_printed: string | null;
+  statement: string;
+  entity_scope: string;
+  source_document: string;
+  source_page: number;
+  extraction_path: string;
+  is_approximate: boolean;
+  note: string | null;
+}
+
 export function ProvenancePanel({
   metric,
   periodLabels,
@@ -21,12 +36,36 @@ export function ProvenancePanel({
   periodLabels: Record<string, string>;
   onClose: () => void;
 }) {
+  const [corroboration, setCorroboration] = useState<DbFact[] | null>(null);
+
   useEffect(() => {
     if (!metric) return;
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [metric, onClose]);
+
+  // The published pack carries the single winning fact per (period, metric).
+  // Postgres holds every candidate that fed the precedence rule - this is what
+  // lets a reviewer see "also stated as EUR 354.8k in the Highlights" alongside
+  // the statement figure that actually won, instead of only the winner.
+  useEffect(() => {
+    if (!metric || metric.inputs.length !== 1) {
+      setCorroboration(null);
+      return;
+    }
+    const [only] = metric.inputs;
+    let cancelled = false;
+    fetch(`/api/facts?period=${encodeURIComponent(only.period)}&metric=${encodeURIComponent(only.metric)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (!cancelled && data?.facts?.length > 1) setCorroboration(data.facts);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [metric]);
 
   if (!metric) return null;
 
@@ -102,6 +141,38 @@ export function ProvenancePanel({
               ))}
             </ul>
           </Block>
+
+          {corroboration && corroboration.length > 1 && (
+            <Block title="Also stated in the source documents">
+              <p className="mb-2 text-[11px] leading-snug text-[var(--muted)]">
+                Other figures for this line item found across the corpus, ranked
+                below the one used here by source precedence (a primary
+                statement outranks a KPI disclosure, which outranks a rounded
+                narrative restatement). Queried live from Postgres.
+              </p>
+              <ul className="space-y-2">
+                {corroboration.map((f) => (
+                  <li
+                    key={`${f.source_document}-${f.source_page}-${f.statement}`}
+                    className="rounded border border-[var(--hairline)] px-3 py-2"
+                  >
+                    <div className="flex items-baseline justify-between gap-3">
+                      <span className="text-xs font-medium capitalize">
+                        {f.statement.replace(/_/g, " ")}
+                      </span>
+                      <span className="shrink-0 font-mono text-xs tabular-nums">
+                        {f.value_as_printed ?? f.value}
+                      </span>
+                    </div>
+                    <p className="mt-1 break-words text-[11px] leading-snug text-[var(--muted)]">
+                      {f.source_document} · page {f.source_page}
+                      {f.is_approximate && " · approximate"}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </Block>
+          )}
 
           {metric.note && (
             <Block title="Analyst note">
