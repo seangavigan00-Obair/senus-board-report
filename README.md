@@ -9,7 +9,8 @@ traceable back to the exact page it came from — with AI-generated commentary
 grounded strictly in that same computed data, never in the raw filings.
 
 **Live:** https://senus-board-report-phi.vercel.app
-**Repository:** https://github.com/seangavigan00-Obair/senus-board-report (private — request access)
+**Repository:** https://github.com/seangavigan00-Obair/senus-board-report (public)
+**Demo video:** https://youtu.be/MUXYe-6BUfg
 
 ---
 
@@ -197,21 +198,26 @@ If the ground truth is wrong, every accuracy figure quoted below is meaningless.
 ```
 $ python validation/score.py data/extracted/facts.json
 
-  pages read  13 across 4 documents
-  precision    96.6%   (85 of 88 matched facts correct)
-  recall       96.6%   (85 of 88 verified facts found)
-    via native_text  41/44 correct
+  pages read  14 across 5 documents
+  precision   100.0%   (88 of 88 matched facts correct)
+  recall      100.0%   (88 of 88 verified facts found)
+    via native_text  44/44 correct
     via vision       44/44 correct
 ```
 
-**The vision path — reading rotated photographs of audited accounts — scored
-44/44.** Every error was on the native-text path.
+**Both extraction paths score perfectly** — 44/44 reading rotated photographs
+of audited accounts via vision, 44/44 reading native text. This is the final
+run, after the `entity_scope` field (see "The consolidated/company trap"
+below) resolved the last class of ambiguity by design rather than by luck of
+source precedence.
 
 Recall is scoped to the exact `(document, page)` pairs a run actually read. An
 earlier version scoped by period and reported twelve "misses" for facts on pages
 the run never opened. A number quoted in a README has to mean something precise.
 
 ### What the failures taught
+
+Getting here took two rounds of fixing real bugs, not one clean run.
 
 The first run scored **85.2%**, and 11 of the 13 errors were a single bug — mine,
 not the model's.
@@ -227,7 +233,7 @@ with a real precedence rule (`pipeline/select.py`) moved 85.2% → 96.6%.
 The remaining three were sign-convention judgement calls the model made
 defensibly — depreciation as a cash-flow *add-back* (an inflow, not a cost) and a
 cost *reduction* (a benefit, not a negative cost). Both are now specified in the
-prompt.
+prompt, and a second full re-run scored **100%** with them fixed.
 
 ---
 
@@ -396,20 +402,19 @@ live Postgres queries, AI commentary and grounded Q&A, and a production
 deployment at the URL above. JSON API at `/api/report`, `/api/facts`,
 `/api/reconciliation`, `/api/ask`, `/api/health`.
 
+**Resolved during development** (kept here rather than deleted, since the
+failure and recovery is itself part of the AI-assisted workflow this README
+documents):
+
+- The Anthropic account backing this project ran out of credit twice while
+  building the AI commentary and the `entity_scope` re-extraction. Both are
+  now complete: commentary is generated for all four audiences and live in
+  production, and the re-extraction scored 100% precision/recall (see above).
+  Every other figure in the report was unaffected throughout, since it is
+  computed by deterministic Python and never depended on either feature.
+
 **Not yet done, and honestly:**
 
-- **AI commentary has not actually been generated** in the deployed app — the
-  Anthropic account backing this project ran out of credit twice during
-  development (documented in the commit history) and again before the offline
-  generator could run. The code path is built, tested for its degraded
-  behaviour, and wired end-to-end in production (`ANTHROPIC_API_KEY` is set on
-  Vercel); it needs one clean run of `pipeline.commentary` (~$0.05) once
-  credit is available. Every other figure in the report is unaffected — it is
-  computed by deterministic Python, not by this feature.
-- The `entity_scope` re-extraction is **incomplete** for the same reason — a
-  prior run stopped at page 29 of 51 when credit ran out. The committed
-  `facts.json` is from the run before that (96.6% precision/recall, without
-  `entity_scope`). Schema, prompt and precedence rule are all in place.
 - **Production Postgres is not provisioned.** The schema, loader and live
   drill-down queries are all built and proven against a local instance
   (verified: a click on a figure fetches its corroborating facts live, e.g.
@@ -430,12 +435,13 @@ deployment at the URL above. JSON API at `/api/report`, `/api/facts`,
 
 ## Deliverables
 
-1. **YouTube demo:** _pending recording._
+1. **YouTube demo:** https://youtu.be/MUXYe-6BUfg
 2. **GitHub repo:** https://github.com/seangavigan00-Obair/senus-board-report
-   (private — access on request).
-3. **One-page write-up:** optional per the brief; not produced separately, as
-   this README covers architecture, workflow, assumptions and validation in
-   the depth the brief asks the write-up to cover.
+   (public).
+3. **One-page write-up:** optional per the brief; produced separately as
+   `docs/Senus-Board-Report-Writeup.pdf` (generated by `docs/make_writeup.py`)
+   — a one-page cold read for someone deciding whether to open the repo,
+   distinct in purpose from this README's engineering depth.
 
 ## Repository
 

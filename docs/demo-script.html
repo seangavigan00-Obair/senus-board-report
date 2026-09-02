@@ -1,0 +1,521 @@
+<title>Demo Video Script</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700;800&family=Mulish:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg: #f6f9f8;
+    --surface: #ffffff;
+    --text: #16211d;
+    --muted: #4b5c56;
+    --faint: #7c8d87;
+    --hairline: #dfe8e5;
+    --chip: #eef4f2;
+
+    --brand-deep: #023c28;
+    --accent: #17706a;
+    --accent-soft: #e5f2f0;
+    --accent-text: #ffffff;
+
+    --critical: #a83a2e;
+    --critical-soft: #fbeeec;
+    --warn: #92651a;
+    --warn-soft: #fbf3e4;
+
+    --code-bg: #0e211c;
+    --code-text: #d9ece7;
+    --code-accent: #6fd6c4;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0d1613;
+      --surface: #14201c;
+      --text: #e7efec;
+      --muted: #a3b3ae;
+      --faint: #74857f;
+      --hairline: #253632;
+      --chip: #1b2925;
+
+      --brand-deep: #0d3324;
+      --accent: #4bc2b3;
+      --accent-soft: #163530;
+      --accent-text: #06211b;
+
+      --critical: #e08376;
+      --critical-soft: #2c1c19;
+      --warn: #dcae5c;
+      --warn-soft: #2b2415;
+
+      --code-bg: #08120f;
+      --code-text: #cfe9e2;
+      --code-accent: #6fd6c4;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1613;
+    --surface: #14201c;
+    --text: #e7efec;
+    --muted: #a3b3ae;
+    --faint: #74857f;
+    --hairline: #253632;
+    --chip: #1b2925;
+
+    --brand-deep: #0d3324;
+    --accent: #4bc2b3;
+    --accent-soft: #163530;
+    --accent-text: #06211b;
+
+    --critical: #e08376;
+    --critical-soft: #2c1c19;
+    --warn: #dcae5c;
+    --warn-soft: #2b2415;
+
+    --code-bg: #08120f;
+    --code-text: #cfe9e2;
+    --code-accent: #6fd6c4;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Mulish', ui-sans-serif, system-ui, sans-serif;
+    line-height: 1.55;
+  }
+  h1, h2, h3, .display {
+    font-family: 'Figtree', ui-sans-serif, sans-serif;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  code, .mono {
+    font-family: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+  }
+  a { color: var(--accent); }
+
+  .wrap {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+
+  header.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--hairline);
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  h1.title {
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 800;
+    color: var(--brand-deep);
+    margin: 0;
+  }
+  .theme-toggle-note { color: var(--brand-deep); }
+  .subtitle {
+    color: var(--muted);
+    font-size: 15.5px;
+    max-width: 62ch;
+  }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+  }
+  .meta-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--chip);
+    color: var(--muted);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 12.5px;
+    font-weight: 600;
+  }
+  .meta-chip strong { color: var(--text); font-weight: 700; }
+
+  .prep {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 20px 22px;
+    margin-bottom: 44px;
+  }
+  .prep h2 { font-size: 15px; margin: 0 0 10px; color: var(--brand-deep); }
+  .prep ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 14.5px; }
+  .prep li { margin-bottom: 4px; }
+  .prep code {
+    background: var(--chip);
+    padding: 1px 6px;
+    border-radius: 5px;
+    font-size: 13px;
+    color: var(--text);
+  }
+
+  /* Timeline */
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .beat {
+    position: relative;
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+  .beat:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 43px;
+    top: 34px;
+    bottom: -6px;
+    width: 2px;
+    background: var(--hairline);
+  }
+  .timestamp {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent-text);
+    background: var(--accent);
+    border-radius: 8px;
+    padding: 6px 0;
+    text-align: center;
+    height: fit-content;
+    box-shadow: 0 0 0 4px var(--bg);
+  }
+  .beat-body { min-width: 0; }
+  .beat h3 {
+    font-size: 18px;
+    margin: 2px 0 10px;
+    color: var(--text);
+  }
+  .beat.keymoment h3::after {
+    content: "key moment";
+    font-family: 'Mulish', sans-serif;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--critical);
+    background: var(--critical-soft);
+    border-radius: 6px;
+    padding: 3px 8px;
+    margin-left: 10px;
+    vertical-align: middle;
+  }
+  .beat.keymoment .timestamp {
+    background: var(--critical);
+  }
+
+  .direction {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 10px;
+  }
+  .direction strong { color: var(--text); }
+
+  blockquote.line {
+    margin: 10px 0;
+    padding: 12px 16px;
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 10px 10px 0;
+    font-size: 15px;
+    color: var(--text);
+    font-style: italic;
+  }
+  blockquote.line p { margin: 0 0 8px; }
+  blockquote.line p:last-child { margin-bottom: 0; }
+
+  pre.cmd {
+    background: var(--code-bg);
+    color: var(--code-text);
+    border-radius: 10px;
+    padding: 12px 16px;
+    overflow-x: auto;
+    font-size: 13px;
+    margin: 10px 0;
+  }
+  pre.cmd .prompt { color: var(--code-accent); }
+
+  .callout {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 22px 24px;
+    margin-top: 8px;
+  }
+  .callout h2 {
+    font-size: 15px;
+    margin: 0 0 14px;
+    color: var(--brand-deep);
+  }
+  .say-list, .cut-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .say-list li {
+    font-size: 14.5px;
+    padding-left: 26px;
+    position: relative;
+  }
+  .say-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background: var(--accent-soft);
+    border: 1.5px solid var(--accent);
+  }
+
+  .cut-order {
+    counter-reset: cut;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cut-order li {
+    counter-increment: cut;
+    font-size: 14.5px;
+    padding-left: 30px;
+    position: relative;
+    color: var(--muted);
+  }
+  .cut-order li::before {
+    content: counter(cut);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--warn-soft);
+    color: var(--warn);
+    font-size: 11.5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .never-cut {
+    margin-top: 16px;
+    padding: 14px 16px;
+    background: var(--critical-soft);
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .never-cut strong { color: var(--critical); }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 640px) {
+    .two-col { grid-template-columns: 1fr; }
+    .beat { grid-template-columns: 60px 1fr; gap: 14px; }
+    .beat:not(:last-child)::before { left: 29px; }
+  }
+
+  footer.sig {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--hairline);
+    color: var(--faint);
+    font-size: 13px;
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <span class="eyebrow">Assiduous Technology Graduate Assessment</span>
+    <h1 class="title">Demo video script</h1>
+    <p class="subtitle">Senus PLC — AI-Native Board Report. A timed walkthrough built around the four moments that carry the most weight, in the order they should land.</p>
+    <div class="meta-row">
+      <span class="meta-chip">Target length <strong>6–8 min</strong></span>
+      <span class="meta-chip">Format <strong>screen recording + voiceover</strong></span>
+      <span class="meta-chip">Takes <strong>one continuous, if possible</strong></span>
+    </div>
+  </header>
+
+  <div class="prep">
+    <h2>Before you hit record</h2>
+    <ul>
+      <li>Live app open: <code>senus-board-report-phi.vercel.app</code></li>
+      <li>A terminal in the repo root, ready to fire two commands</li>
+      <li><code>pipeline/metrics.py</code> and <code>pipeline/schema.py</code> open in an editor, scrolled to the referenced spot</li>
+    </ul>
+  </div>
+
+  <div class="timeline">
+
+    <div class="beat">
+      <div class="timestamp">0:00</div>
+      <div class="beat-body">
+        <h3>Open on the problem, not the product</h3>
+        <p class="direction">Don't open on the dashboard — open on why this was hard. Briefly show <code>data/source/</code>.</p>
+        <blockquote class="line">
+          <p>"This is a board report for Senus PLC, an Irish company on Euronext Access. The brief asks for an AI-native platform that turns their published financials into a board pack. The obvious way to build that is to hand an LLM the PDFs and ask it to write a report. I didn't do that, and the reason why is the whole point of this project."</p>
+          <p>"Fifteen published documents. Some are normal text PDFs. But the audited FY2025 accounts — the only source for full-year figures — are a scanned photograph of a printed document, rotated 90 degrees, with zero machine-readable text. There is no path to these numbers that doesn't go through a vision model."</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="beat">
+      <div class="timestamp">0:40</div>
+      <div class="beat-body">
+        <h3>The extraction pipeline</h3>
+        <p class="direction">Switch to terminal.</p>
+        <pre class="cmd"><span class="prompt">$</span> python -m pipeline.documents</pre>
+        <blockquote class="line">
+          <p>"This classifies every document by how much real text it has. Native text PDFs average over a thousand characters a page. The scanned ones average zero. That split decides which extraction path each page takes — measured, not assumed, so if a document is ever replaced the pipeline re-routes itself."</p>
+        </blockquote>
+        <pre class="cmd"><span class="prompt">$</span> python validation/check_golden_set.py</pre>
+        <blockquote class="line">
+          <p>"Before I wrote a line of extraction code, I hand-transcribed 88 figures from these documents and built a checker that proves they actually articulate — the P&amp;L foots, the balance sheet balances. One thing didn't pass: it's flagged, not hidden."</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="beat keymoment">
+      <div class="timestamp">1:20</div>
+      <div class="beat-body">
+        <h3>The D01 defect</h3>
+        <p class="direction">The strongest moment in the demo. Slow down here.</p>
+        <blockquote class="line">
+          <p>"That flag is a real footing error in Senus's own published half-year results. Turnover minus cost of sales doesn't equal the printed gross profit — it's off by exactly one thousand euro. I checked it three ways: management's own growth percentage only works against the printed figure, their published margin only works against the printed figure, and the current-year column on the same page foots perfectly. Cost of sales is the likely typo. My pipeline records both figures exactly as printed and flags the contradiction — it never silently corrects a published document."</p>
+        </blockquote>
+        <pre class="cmd"><span class="prompt">$</span> python validation/score.py data/extracted/facts.json</pre>
+        <blockquote class="line">
+          <p>"That's the accuracy of the AI extraction against my hand-verified ground truth: 100% precision, 100% recall, across every page — including the vision path reading that rotated scan."</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="beat keymoment">
+      <div class="timestamp">2:00</div>
+      <div class="beat-body">
+        <h3>The database</h3>
+        <p class="direction">Switch to a psql terminal or a DB client.</p>
+        <blockquote class="line">
+          <p>"Extraction into a database is what the brief actually asks for, so it's not optional here."</p>
+        </blockquote>
+        <pre class="cmd"><span class="prompt">$</span> psql -U postgres -d senus -c "SELECT period_id, metric, entity_scope, value, source_document, source_page FROM facts WHERE period_id='FY2025' AND metric='profit_after_tax';"</pre>
+        <blockquote class="line">
+          <p>"This is a real finding the database caught: Irish statutory accounts print the group AND the parent company separately, with genuinely different numbers. €590,256 consolidated, €593,571 company-only. My schema tags every fact with which one it is, so the board report can't accidentally mix group and parent figures — which would be a material error in a real board pack."</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="beat">
+      <div class="timestamp">3:00</div>
+      <div class="beat-body">
+        <h3>The board report itself</h3>
+        <p class="direction">Switch to the browser, live site. Point at the liquidity alert.</p>
+        <blockquote class="line">
+          <p>"This is the actual application. It opens on the thing a board most needs to see."</p>
+          <p>"Cash fell from seven hundred thirty-five thousand euro to about a hundred and thirty thousand in six months. That's 1.3 months of runway, computed from published figures, not asserted."</p>
+        </blockquote>
+        <p class="direction">Toggle the audience switcher (Board → Credit → Equity).</p>
+        <blockquote class="line">
+          <p>"Same data, reframed for who's reading it. A credit provider needs coverage and runway. An equity investor needs growth against the company's own fifty-percent CAGR target."</p>
+        </blockquote>
+        <p class="direction">Click into the Revenue by half chart and point at the H1/H2 split.</p>
+        <blockquote class="line">
+          <p>"This is a finding the derived-period logic surfaced on its own. The half-year results reported 4.1% growth and it reads like a slowdown. Split the year properly and H1 was hit by a wet winter delaying soil sampling — H2 grew 30.1%. The full-year number hides both halves."</p>
+        </blockquote>
+        <p class="direction">Click a figure to open the provenance panel.</p>
+        <blockquote class="line">
+          <p>"Every number is clickable. This shows the formula, the exact source document and page, and — because it's wired to Postgres — any other figure the corpus stated for the same line item, ranked by which source is more authoritative."</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="beat keymoment">
+      <div class="timestamp">5:00</div>
+      <div class="beat-body">
+        <h3>The AI layer — and why it doesn't hallucinate</h3>
+        <blockquote class="line">
+          <p>"The brief asks for AI-powered insights. The wrong way to do that is to hand the raw filings back to an LLM and ask it to analyse the company — that reintroduces the exact problem this whole project exists to prevent: a model doing financial reasoning with no way to check its arithmetic."</p>
+        </blockquote>
+        <p class="direction">Scroll to the AI Commentary card.</p>
+        <blockquote class="line">
+          <p>"So this model sees exactly two things: the metrics my code already calculated and verified, and an excerpt of management's own results presentation transcript. It's never given the raw PDFs, and it's never asked to compute anything — only to narrate numbers that already exist."</p>
+        </blockquote>
+        <p class="direction">Click a citation chip.</p>
+        <blockquote class="line">
+          <p>"Every citation is checked against what the model was actually given before it ever reaches the screen — if it invented a metric id, that would be caught here, not trusted."</p>
+        </blockquote>
+        <p class="direction">Type a real question into "Ask about this report" live, then a question outside scope (e.g. share price).</p>
+        <blockquote class="line">
+          <p>"This is a live, grounded question — not scripted."</p>
+          <p>"And when a question falls outside what these two sources can answer, it says so, rather than guessing."</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="beat">
+      <div class="timestamp">6:30</div>
+      <div class="beat-body">
+        <h3>Close: architecture and what's next</h3>
+        <p class="direction">Show the README architecture diagram, or just say it.</p>
+        <blockquote class="line">
+          <p>"End to end: PDFs classified and routed, extracted by Claude Opus 5 with structured outputs, reconciled against itself, loaded into Postgres, computed by deterministic Python — never an LLM — and served through Next.js with full provenance. Deployed and live at the URL in the description."</p>
+          <p>"If I had another week: hosted Postgres in production instead of local, and a broader golden set covering the AGM circular and the leadership transition disclosure, which I didn't have time to hand-verify."</p>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="two-col" style="margin-top: 12px;">
+    <div class="callout">
+      <h2>Say out loud, not just on screen</h2>
+      <ul class="say-list">
+        <li>State the accuracy number verbally — graders skim transcripts, they won't always read the on-screen text.</li>
+        <li>Name the D01 defect explicitly as <em>"a mistake in Senus's own published accounts that my reconciliation layer caught"</em> — the single highest-value sentence in the video.</li>
+        <li>Say <em>"the model never calculates"</em> at least once — it's the architectural thesis of the whole project, and it needs to be spoken, not just visible in a code comment.</li>
+      </ul>
+    </div>
+
+    <div class="callout">
+      <h2>If you're short on time, cut in this order</h2>
+      <ol class="cut-order">
+        <li>The "what I'd do next" close</li>
+        <li>The second Q&amp;A example (the refusal) — keep only the working one</li>
+        <li>Nothing else — see below</li>
+      </ol>
+      <div class="never-cut"><strong>Never cut:</strong> the D01 defect, the accuracy number, the consolidated/company database finding, "the model never calculates."</div>
+    </div>
+  </div>
+
+  <footer class="sig">Senus PLC Board Report · Assiduous Technology Graduate Assessment · Sean Gavigan</footer>
+
+</div>
