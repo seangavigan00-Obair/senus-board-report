@@ -72,7 +72,10 @@ export async function POST(req: NextRequest) {
 
   let transcript = "";
   try {
-    const transcriptFile = path.join(process.cwd(), "..", "data", "source", "transcript.txt");
+    // Bundled inside web/data rather than read from ../data/source: a Vercel
+    // deployment's project root is this directory, so a path reaching outside
+    // it is not included in the deployment at all - this bit me once already.
+    const transcriptFile = path.join(process.cwd(), "data", "transcript.txt");
     transcript = (await fs.readFile(transcriptFile, "utf-8")).slice(0, 6000);
   } catch {
     // Transcript is optional context; the metrics alone still ground an answer.
