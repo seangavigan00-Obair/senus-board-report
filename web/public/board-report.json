@@ -3012,5 +3012,105 @@
     "acv_target": 50000,
     "ireland_revenue_share_target_pct": 50.0,
     "source": "Senus-PLC-Information-Document-December-2025.pdf p26-27"
+  },
+  "commentary": {
+    "management": {
+      "audience": "management",
+      "commentary": "Cost discipline is not holding at the half year: HY2026 revenue of EUR 354,813 was only 4.07% ahead of the prior half year, yet EBITDA widened to negative EUR 473,739 from negative EUR 395,561 in HY2025 and the operating margin deteriorated to -136.34%, so the gain in gross margin to 81.72% has been absorbed entirely below the gross line. Cash consumption has stepped up correspondingly, with net monthly burn of EUR 69,799 in HY2026 against EUR 31,523 a month across FY2025, leaving 10.5 months of runway on the half-year rate; the H2FY2026 position is materially worse, with burn derived from the cash movement at EUR 100,865 a month and runway of 1.29 months, and that figure is approximate because no cash flow statement is published for the period, so there are no monthly cash figures to interrogate behind it. Working capital of EUR 536,233 also flatters the picture, since it excludes the EUR 850,000 Loamin contingent consideration; on a fully loaded basis it is negative EUR 313,767, which makes the performance conditions attached to that payment a live operational control question rather than a financing footnote. Management presented Senus to investors as a climate risk and soil health intelligence business building natural capital monitoring at scale, and pointed to financial institutions, agri corporates and ecosystem restoration as its priority markets with blue-chip co-op and banking references, but that commercial framing is management's own and is not yet visible in half-year revenue conversion. The immediate actions the numbers support are a hard cap on the operating cost base against the 19.48% full-year revenue growth implied by the approximate FY2026 figure of EUR 1,000,000, and a dated plan for the H2 cash position before the Loamin condition crystallises.",
+      "metrics_cited": [
+        "revenue",
+        "revenue_growth_yoy",
+        "gross_margin",
+        "operating_margin",
+        "ebitda",
+        "monthly_burn",
+        "cash_runway",
+        "working_capital"
+      ],
+      "management_attributions": [
+        "climate risk and soil health intelligence technology building natural capital monitoring at scale",
+        "financial institutions, agri corporates and ecosystem restoration as priority markets",
+        "strong track record of executing at scale with large corporations"
+      ],
+      "model": "claude-opus-5",
+      "grounding": {
+        "metrics_available": 43,
+        "transcript_chars": 6000
+      }
+    },
+    "board": {
+      "audience": "board",
+      "commentary": "Solvency is the immediate issue: cash runway was 10.5 months at HY2026 on a net monthly burn of EUR 69,799, but on the H2FY2026 cash movement the burn rose to EUR 100,865 a month and runway falls to 1.3 months, a figure flagged critical and approximate because no cash flow statement is published for that half, so the Board should treat it as derived from the cash balance rather than a verified operating burn. Reported working capital of EUR 536,233 at HY2026 excludes the EUR 850,000 Loamin contingent consideration; if that becomes payable, working capital is negative EUR 313,767, and the Board needs a funding decision that covers both cases. On the plan, growth has decelerated sharply \u2014 FY2025 revenue grew 21.6% to EUR 836,991, but HY2026 revenue of EUR 354,813 was only 4.1% ahead of the prior half year, with the full FY2026 figure of EUR 1,000,000 (19.5% growth) approximate and dependent on an implied H2 of EUR 645,187, up 30.1%, that is heavily back-ended. Losses remain structural rather than gross-margin driven: gross margin was 81.7% at HY2026 while operating margin was negative 136.3% and EBITDA negative EUR 473,739, so the loss sits in the cost base, and ROCE and DSCR are not meaningful while the company is loss-making. Management told investors the growth case rests on three priority markets \u2014 financial institutions under ECB-driven regulatory pressure, agri corporates seeking supply chain resilience, and ecosystem restoration, which Brendan Allen characterised as nascent but showing strong growth signals; that is management's framing, and the transcript provided contains no revenue or pipeline quantification against a Senus 2030 target, so the Board cannot yet test the plan's credibility from these sources.",
+      "metrics_cited": [
+        "cash_runway",
+        "monthly_burn",
+        "working_capital",
+        "revenue",
+        "revenue_growth_yoy",
+        "gross_margin",
+        "operating_margin",
+        "ebitda",
+        "roce",
+        "dscr"
+      ],
+      "management_attributions": [
+        "three priority markets: financial institutions, agri corporates, ecosystem restoration",
+        "regulatory pressure from the ECB on lending decisions",
+        "ecosystem restoration a nascent market showing strong growth signals",
+        "supply chain resilience for agri corporates"
+      ],
+      "model": "claude-opus-5",
+      "grounding": {
+        "metrics_available": 50,
+        "transcript_chars": 6000
+      }
+    },
+    "equity": {
+      "audience": "equity",
+      "commentary": "Against the 50% CAGR ambition, the growth record falls well short: revenue rose 21.6% to EUR 836,991 in FY2025 and HY2026 added only 4.1% year on year to EUR 354,813, with the full-year FY2026 figure of approximately EUR 1.0m implying roughly 19.5% growth (the H2 FY2026 revenue of about EUR 645,187, up around 30.1%, is flagged as approximate and should be treated as such). The quality of that revenue is improving \u2014 gross margin has climbed from 62.8% in FY2024 to 77.5% in FY2025 and 81.7% in HY2026 \u2014 but the path to profitability has moved backwards in the half, with EBITDA widening to negative EUR 473,739 from negative EUR 395,561 a year earlier and the operating margin at -136.3% versus -75.7% for FY2025 as a whole. Funding this gap is the binding constraint: HY2026 working capital of EUR 536,233 excludes the EUR 850,000 Loamin contingent consideration and would be negative EUR 313,767 if included, and while runway stood at 10.5 months at the half year, the H2 FY2026 burn of about EUR 100,865 a month leaves an approximate 1.3 months, flagged critical. Management characterised Senus as a natural-capital MRV platform with blue-chip traction across dairy co-ops, banks and the European Space Agency, and Brendan Allen pointed to regulatory pressure on financial institutions and an emerging ecosystem-restoration market as the growth drivers \u2014 that is management's framing, and the revenue data does not yet corroborate an inflection. No segmental or monthly revenue disclosure exists in the data, so we cannot verify how much of the H2 step-up is attributable to any single contract or to the acquisition.",
+      "metrics_cited": [
+        "revenue",
+        "revenue_growth_yoy",
+        "gross_margin",
+        "operating_margin",
+        "ebitda",
+        "working_capital",
+        "monthly_burn",
+        "cash_runway"
+      ],
+      "management_attributions": [
+        "natural-capital MRV platform",
+        "blue-chip traction across dairy co-ops, banks and the European Space Agency",
+        "regulatory pressure on financial institutions",
+        "emerging ecosystem-restoration market"
+      ],
+      "model": "claude-opus-5",
+      "grounding": {
+        "metrics_available": 47,
+        "transcript_chars": 6000
+      }
+    },
+    "credit": {
+      "audience": "credit",
+      "commentary": "Debt service is not covered by earnings in any period measured: DSCR is negative and flagged not meaningful at FY2024, -109.99x at H2FY2025 and -305.54x at FY2025, meaning EBITDA is negative and borrowings are being serviced from cash and funding rather than operations. Liquidity headroom is thin and deteriorating within the year: HY2026 working capital of EUR 536,233 excludes the EUR 850,000 Loamin contingent consideration, and including it would put working capital at negative EUR 313,767, while HY2026 runway of 10.5 months on a EUR 69,799 monthly burn falls to an approximate 1.29 months at H2FY2026 on a burn of about EUR 100,865 per month. That H2FY2026 figure is flagged critical and is derived from the movement in the cash balance because no cash flow statement is published for the period, and no monthly cash data exists to test whether the burn was even across the half, so the timing of any covenant or repayment test cannot be pinpointed from this data. Top-line growth is real but does not yet change the coverage position - revenue of approximately EUR 1,000,000 in FY2026, up 19.48% on FY2025's EUR 836,991, after 21.60% growth the prior year. Management's presentation covered market positioning rather than liquidity, with Brendan Allen describing Senus as a natural capital MRV business serving financial institutions, agri corporates and ecosystem restoration and citing blue-chip contracts; that is management's own framing and no repayment or refinancing plan was set out in the excerpt available.",
+      "metrics_cited": [
+        "dscr",
+        "working_capital",
+        "cash_runway",
+        "monthly_burn",
+        "revenue",
+        "revenue_growth_yoy"
+      ],
+      "management_attributions": [
+        "natural capital MRV business",
+        "priority markets: financial institutions, agri corporates, ecosystem restoration",
+        "blue-chip corporate contracts and track record of executing at scale"
+      ],
+      "model": "claude-opus-5",
+      "grounding": {
+        "metrics_available": 26,
+        "transcript_chars": 6000
+      }
+    }
   }
 }

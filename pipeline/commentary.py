@@ -39,6 +39,7 @@ ROOT = Path(__file__).resolve().parent.parent
 REPORT = ROOT / "web" / "public" / "board-report.json"
 TRANSCRIPT = ROOT / "data" / "source" / "transcript.txt"
 MODEL = "claude-opus-5"
+MAX_TOKENS = 4096  # first run truncated mid-JSON at 1024; commentary + citations need more room
 
 AUDIENCES = {
     "management": "Operational control - where cash is going and whether cost discipline is holding.",
@@ -127,7 +128,7 @@ Write the commentary for this audience now."""
 
     response = client.messages.parse(
         model=MODEL,
-        max_tokens=1024,
+        max_tokens=MAX_TOKENS,
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_content}],
         output_format=CommentaryOutput,
