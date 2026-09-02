@@ -79,7 +79,17 @@ export interface Strategy {
   source: string;
 }
 
+export interface AudienceCommentary {
+  audience: Audience;
+  commentary: string;
+  metrics_cited: string[];
+  management_attributions: string[];
+  model: string;
+  grounding: { metrics_available: number; transcript_chars: number };
+}
+
 export interface BoardReport {
+  commentary?: Record<Audience, AudienceCommentary>;
   build: {
     generated_at: string;
     fact_source: "golden_set" | "pipeline_extraction";

@@ -5,6 +5,8 @@ import type { Audience, BoardReport, Metric } from "@/lib/types";
 import { AUDIENCE_LABEL, AUDIENCE_LENS } from "@/lib/types";
 import { display, formatValue, deltaLabel, trend } from "@/lib/format";
 import { BarSeries, Composition, LineSeries, Waterfall, toPoints } from "./charts";
+import { AskCard } from "./AskCard";
+import { CommentaryCard } from "./CommentaryCard";
 import { ComparisonTable } from "./ComparisonTable";
 import { ProvenancePanel } from "./ProvenancePanel";
 
@@ -248,6 +250,22 @@ export function Dashboard({ report }: { report: BoardReport }) {
               <Kpi metric={grossMargin} prior={get("gross_margin", "FY2025")} caption="latest reported" onInspect={setInspecting} />
               <Kpi metric={headline} caption={`Lead indicator · ${AUDIENCE_LABEL[audience]}`} onInspect={setInspecting} />
             </section>
+
+            <div className="mb-8 grid gap-5 lg:grid-cols-2">
+              <CommentaryCard
+                commentary={report.commentary?.[audience]}
+                onInspectMetric={(id) => {
+                  const m = latest(id);
+                  if (m) setInspecting(m);
+                }}
+              />
+              <AskCard
+                onInspectMetric={(id) => {
+                  const m = latest(id);
+                  if (m) setInspecting(m);
+                }}
+              />
+            </div>
 
             <Panel
               id="growth"
